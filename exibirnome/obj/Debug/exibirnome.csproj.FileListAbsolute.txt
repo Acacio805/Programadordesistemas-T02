@@ -1,0 +1,11 @@
+C:\Users\acacio.sribeiro1\source\repos\exibirnome\bin\Debug\exibirnome.exe.config
+C:\Users\acacio.sribeiro1\source\repos\exibirnome\bin\Debug\exibirnome.exe
+C:\Users\acacio.sribeiro1\source\repos\exibirnome\bin\Debug\exibirnome.pdb
+C:\Users\acacio.sribeiro1\source\repos\exibirnome\obj\Debug\exibirnome.csproj.AssemblyReference.cache
+C:\Users\acacio.sribeiro1\source\repos\exibirnome\obj\Debug\exibirnome.frmExibirNome.resources
+C:\Users\acacio.sribeiro1\source\repos\exibirnome\obj\Debug\exibirnome.Properties.Resources.resources
+C:\Users\acacio.sribeiro1\source\repos\exibirnome\obj\Debug\exibirnome.csproj.GenerateResource.cache
+C:\Users\acacio.sribeiro1\source\repos\exibirnome\obj\Debug\exibirnome.csproj.CoreCompileInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\exibirnome\obj\Debug\exibirnome.exe
+C:\Users\acacio.sribeiro1\source\repos\exibirnome\obj\Debug\exibirnome.pdb
+C:\Users\acacio.sribeiro1\source\repos\exibirnome\obj\Debug\exibirnome.exe.config

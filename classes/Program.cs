@@ -76,7 +76,7 @@ namespace Classes
             int idadeCarro = meuCarro.CalcularIdade();
             Console.WriteLine($"Idade do carro: {idadeCarro} anos");
 
-            // Mantendo o console abero
+            // Mantendo o console aberto
             Console.ReadLine();
         }
     }
