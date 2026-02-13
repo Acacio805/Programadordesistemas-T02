@@ -1,0 +1,11 @@
+C:\Users\acacio.sribeiro1\source\repos\Calculadora_Atividade\bin\Debug\Calculadora_Atividade.exe.config
+C:\Users\acacio.sribeiro1\source\repos\Calculadora_Atividade\bin\Debug\Calculadora_Atividade.exe
+C:\Users\acacio.sribeiro1\source\repos\Calculadora_Atividade\bin\Debug\Calculadora_Atividade.pdb
+C:\Users\acacio.sribeiro1\source\repos\Calculadora_Atividade\obj\Debug\Calculadora_Atividade.csproj.AssemblyReference.cache
+C:\Users\acacio.sribeiro1\source\repos\Calculadora_Atividade\obj\Debug\Calculadora_Atividade.Properties.Resources.resources
+C:\Users\acacio.sribeiro1\source\repos\Calculadora_Atividade\obj\Debug\Calculadora_Atividade.csproj.GenerateResource.cache
+C:\Users\acacio.sribeiro1\source\repos\Calculadora_Atividade\obj\Debug\Calculadora_Atividade.csproj.CoreCompileInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\Calculadora_Atividade\obj\Debug\Calculadora_Atividade.exe
+C:\Users\acacio.sribeiro1\source\repos\Calculadora_Atividade\obj\Debug\Calculadora_Atividade.pdb
+C:\Users\acacio.sribeiro1\source\repos\Calculadora_Atividade\obj\Debug\Calculadora_Atividade.exe.config
+C:\Users\acacio.sribeiro1\source\repos\Calculadora_Atividade\obj\Debug\Calculadora_Atividade.frmCalculadora.resources

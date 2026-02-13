@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\acacio.sribeiro1\\source\\repos\\calculadorasimples\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B20A2EE5-5ED1-4450-A406-945C97E73178}|calculadorasimples.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\calculadorasimples\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B20A2EE5-5ED1-4450-A406-945C97E73178}|calculadorasimples.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B20A2EE5-5ED1-4450-A406-945C97E73178}|calculadorasimples.csproj|C:\\Users\\acacio.sribeiro1\\source\\repos\\calculadorasimples\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B20A2EE5-5ED1-4450-A406-945C97E73178}|calculadorasimples.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B20A2EE5-5ED1-4450-A406-945C97E73178}|calculadorasimples.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\calculadorasimples\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B20A2EE5-5ED1-4450-A406-945C97E73178}|calculadorasimples.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B20A2EE5-5ED1-4450-A406-945C97E73178}|calculadorasimples.csproj|C:\\Users\\acacio.sribeiro1\\source\\repos\\calculadorasimples\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\calculadorasimples\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -40,7 +40,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\calculadorasimples\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
