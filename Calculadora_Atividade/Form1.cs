@@ -19,13 +19,7 @@ namespace Calculadora_Atividade
 
         private Operacao OperacaoSelecionada { get; set; }
 
-        enum Operacao 
-        { 
-            Adicao,
-            Subtracao,
-            Multiplicacao,
-            Divisao
-        }
+        enum Operacao { Adicao, Subtracao, Multiplicacao, Divisao }
 
         public frmCalculadora()
         {
@@ -35,7 +29,6 @@ namespace Calculadora_Atividade
         private void btn0_Click(object sender, EventArgs e)
         {
             txtResultado.Text += "0";
-
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -82,10 +75,11 @@ namespace Calculadora_Atividade
         {
             txtResultado.Text += "9";
         }
+
         private void btnVirgula_Click(object sender, EventArgs e)
         {              
             if (!txtResultado.Text.Contains(","))
-                {
+            {
                 txtResultado.Text += ",";
             }
         }
@@ -124,19 +118,17 @@ namespace Calculadora_Atividade
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
+            lblOperação.Text = "Resultado";
             switch (OperacaoSelecionada)
             {
                 case Operacao.Adicao:
                     Resultado = Valor + Convert.ToDecimal(txtResultado.Text);
-                    lblOperação.Text = "Resultado";
                     break;
                 case Operacao.Subtracao:
                     Resultado = Valor - Convert.ToDecimal(txtResultado.Text);
-                    lblOperação.Text = "Resultado";
                     break;
                 case Operacao.Multiplicacao:
                     Resultado = Valor * Convert.ToDecimal(txtResultado.Text);
-                    lblOperação.Text = "Resultado";
                     break;
                 case Operacao.Divisao:
                     if (Convert.ToDecimal(txtResultado.Text) == 0)
@@ -148,7 +140,6 @@ namespace Calculadora_Atividade
                     else
                     {
                         Resultado = Valor / Convert.ToDecimal(txtResultado.Text);
-                        lblOperação.Text = "Resultado";
                         break;
                     }
                 default:

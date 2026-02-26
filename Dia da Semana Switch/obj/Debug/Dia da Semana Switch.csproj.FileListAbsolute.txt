@@ -1,0 +1,11 @@
+C:\Users\acacio.sribeiro1\source\repos\Dia da Semana Switch\bin\Debug\Dia da Semana Switch.exe.config
+C:\Users\acacio.sribeiro1\source\repos\Dia da Semana Switch\bin\Debug\Dia da Semana Switch.exe
+C:\Users\acacio.sribeiro1\source\repos\Dia da Semana Switch\bin\Debug\Dia da Semana Switch.pdb
+C:\Users\acacio.sribeiro1\source\repos\Dia da Semana Switch\obj\Debug\Dia da Semana Switch.csproj.AssemblyReference.cache
+C:\Users\acacio.sribeiro1\source\repos\Dia da Semana Switch\obj\Debug\Dia_da_Semana_Switch.frmDiadaSemana.resources
+C:\Users\acacio.sribeiro1\source\repos\Dia da Semana Switch\obj\Debug\Dia_da_Semana_Switch.Properties.Resources.resources
+C:\Users\acacio.sribeiro1\source\repos\Dia da Semana Switch\obj\Debug\Dia da Semana Switch.csproj.GenerateResource.cache
+C:\Users\acacio.sribeiro1\source\repos\Dia da Semana Switch\obj\Debug\Dia da Semana Switch.csproj.CoreCompileInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\Dia da Semana Switch\obj\Debug\Dia da Semana Switch.exe
+C:\Users\acacio.sribeiro1\source\repos\Dia da Semana Switch\obj\Debug\Dia da Semana Switch.pdb
+C:\Users\acacio.sribeiro1\source\repos\Dia da Semana Switch\obj\Debug\Dia da Semana Switch.exe.config

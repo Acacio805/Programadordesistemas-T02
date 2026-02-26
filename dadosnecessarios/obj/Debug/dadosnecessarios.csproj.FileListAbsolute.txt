@@ -1,0 +1,11 @@
+C:\Users\acacio.sribeiro1\source\repos\dadosnecessarios\bin\Debug\dadosnecessarios.exe.config
+C:\Users\acacio.sribeiro1\source\repos\dadosnecessarios\bin\Debug\dadosnecessarios.exe
+C:\Users\acacio.sribeiro1\source\repos\dadosnecessarios\bin\Debug\dadosnecessarios.pdb
+C:\Users\acacio.sribeiro1\source\repos\dadosnecessarios\obj\Debug\dadosnecessarios.csproj.AssemblyReference.cache
+C:\Users\acacio.sribeiro1\source\repos\dadosnecessarios\obj\Debug\dadosnecessarios.frmFormularioSimples.resources
+C:\Users\acacio.sribeiro1\source\repos\dadosnecessarios\obj\Debug\dadosnecessarios.Properties.Resources.resources
+C:\Users\acacio.sribeiro1\source\repos\dadosnecessarios\obj\Debug\dadosnecessarios.csproj.GenerateResource.cache
+C:\Users\acacio.sribeiro1\source\repos\dadosnecessarios\obj\Debug\dadosnecessarios.csproj.CoreCompileInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\dadosnecessarios\obj\Debug\dadosnecessarios.exe
+C:\Users\acacio.sribeiro1\source\repos\dadosnecessarios\obj\Debug\dadosnecessarios.pdb
+C:\Users\acacio.sribeiro1\source\repos\dadosnecessarios\obj\Debug\dadosnecessarios.exe.config

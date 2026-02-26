@@ -1,0 +1,11 @@
+C:\Users\acacio.sribeiro1\source\repos\GerenciarEstoque\bin\Debug\GerenciarEstoque.exe.config
+C:\Users\acacio.sribeiro1\source\repos\GerenciarEstoque\bin\Debug\GerenciarEstoque.exe
+C:\Users\acacio.sribeiro1\source\repos\GerenciarEstoque\bin\Debug\GerenciarEstoque.pdb
+C:\Users\acacio.sribeiro1\source\repos\GerenciarEstoque\obj\Debug\GerenciarEstoque.csproj.AssemblyReference.cache
+C:\Users\acacio.sribeiro1\source\repos\GerenciarEstoque\obj\Debug\GerenciarEstoque.frmGerenciamentoEstoque.resources
+C:\Users\acacio.sribeiro1\source\repos\GerenciarEstoque\obj\Debug\GerenciarEstoque.Properties.Resources.resources
+C:\Users\acacio.sribeiro1\source\repos\GerenciarEstoque\obj\Debug\GerenciarEstoque.csproj.GenerateResource.cache
+C:\Users\acacio.sribeiro1\source\repos\GerenciarEstoque\obj\Debug\GerenciarEstoque.csproj.CoreCompileInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\GerenciarEstoque\obj\Debug\GerenciarEstoque.exe
+C:\Users\acacio.sribeiro1\source\repos\GerenciarEstoque\obj\Debug\GerenciarEstoque.pdb
+C:\Users\acacio.sribeiro1\source\repos\GerenciarEstoque\obj\Debug\GerenciarEstoque.exe.config

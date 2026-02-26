@@ -151,11 +151,11 @@
             // 
             // txtResultado
             // 
-            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultado.Location = new System.Drawing.Point(13, 12);
+            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultado.Location = new System.Drawing.Point(12, 12);
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.ReadOnly = true;
-            this.txtResultado.Size = new System.Drawing.Size(342, 38);
+            this.txtResultado.Size = new System.Drawing.Size(342, 49);
             this.txtResultado.TabIndex = 10;
             this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -242,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 459);
+            this.ClientSize = new System.Drawing.Size(364, 463);
             this.Controls.Add(this.lblOperação);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnAdicionar);

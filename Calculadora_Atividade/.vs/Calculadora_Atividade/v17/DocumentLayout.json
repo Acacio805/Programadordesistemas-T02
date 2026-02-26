@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\acacio.sribeiro1\\source\\repos\\Calculadora_Atividade\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{96EA8C0D-BE8E-4465-B1A1-DCEA5D5C8B2E}|Calculadora_Atividade.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\calculadora_atividade\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96EA8C0D-BE8E-4465-B1A1-DCEA5D5C8B2E}|Calculadora_Atividade.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96EA8C0D-BE8E-4465-B1A1-DCEA5D5C8B2E}|Calculadora_Atividade.csproj|C:\\Users\\acacio.sribeiro1\\source\\repos\\Calculadora_Atividade\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96EA8C0D-BE8E-4465-B1A1-DCEA5D5C8B2E}|Calculadora_Atividade.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96EA8C0D-BE8E-4465-B1A1-DCEA5D5C8B2E}|Calculadora_Atividade.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\calculadora_atividade\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{96EA8C0D-BE8E-4465-B1A1-DCEA5D5C8B2E}|Calculadora_Atividade.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96EA8C0D-BE8E-4465-B1A1-DCEA5D5C8B2E}|Calculadora_Atividade.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\calculadora_atividade\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96EA8C0D-BE8E-4465-B1A1-DCEA5D5C8B2E}|Calculadora_Atividade.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96EA8C0D-BE8E-4465-B1A1-DCEA5D5C8B2E}|Calculadora_Atividade.csproj|C:\\Users\\acacio.sribeiro1\\source\\repos\\Calculadora_Atividade\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96EA8C0D-BE8E-4465-B1A1-DCEA5D5C8B2E}|Calculadora_Atividade.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,30 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\Calculadora_Atividade\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\Calculadora_Atividade\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAhwJ8AAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAhwJ8AAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-13T18:28:11.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\Calculadora_Atividade\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\Calculadora_Atividade\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAHwAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAwwIkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-13T17:43:37.451Z",
               "EditorCaption": ""

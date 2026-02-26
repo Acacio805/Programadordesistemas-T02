@@ -1,0 +1,11 @@
+C:\Users\acacio.sribeiro1\source\repos\CalcularIdeade\bin\Debug\CalcularIdeade.exe.config
+C:\Users\acacio.sribeiro1\source\repos\CalcularIdeade\bin\Debug\CalcularIdeade.exe
+C:\Users\acacio.sribeiro1\source\repos\CalcularIdeade\bin\Debug\CalcularIdeade.pdb
+C:\Users\acacio.sribeiro1\source\repos\CalcularIdeade\obj\Debug\CalcularIdeade.csproj.AssemblyReference.cache
+C:\Users\acacio.sribeiro1\source\repos\CalcularIdeade\obj\Debug\CalcularIdeade.frmCalcularIdade.resources
+C:\Users\acacio.sribeiro1\source\repos\CalcularIdeade\obj\Debug\CalcularIdeade.Properties.Resources.resources
+C:\Users\acacio.sribeiro1\source\repos\CalcularIdeade\obj\Debug\CalcularIdeade.csproj.GenerateResource.cache
+C:\Users\acacio.sribeiro1\source\repos\CalcularIdeade\obj\Debug\CalcularIdeade.csproj.CoreCompileInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\CalcularIdeade\obj\Debug\CalcularIdeade.exe
+C:\Users\acacio.sribeiro1\source\repos\CalcularIdeade\obj\Debug\CalcularIdeade.pdb
+C:\Users\acacio.sribeiro1\source\repos\CalcularIdeade\obj\Debug\CalcularIdeade.exe.config
