@@ -1,0 +1,11 @@
+C:\Users\acacio.sribeiro1\source\repos\TabuadaComLoop\bin\Debug\TabuadaComLoop.exe.config
+C:\Users\acacio.sribeiro1\source\repos\TabuadaComLoop\bin\Debug\TabuadaComLoop.exe
+C:\Users\acacio.sribeiro1\source\repos\TabuadaComLoop\bin\Debug\TabuadaComLoop.pdb
+C:\Users\acacio.sribeiro1\source\repos\TabuadaComLoop\obj\Debug\TabuadaComLoop.csproj.AssemblyReference.cache
+C:\Users\acacio.sribeiro1\source\repos\TabuadaComLoop\obj\Debug\TabuadaComLoop.frmTabuadaLoop.resources
+C:\Users\acacio.sribeiro1\source\repos\TabuadaComLoop\obj\Debug\TabuadaComLoop.Properties.Resources.resources
+C:\Users\acacio.sribeiro1\source\repos\TabuadaComLoop\obj\Debug\TabuadaComLoop.csproj.GenerateResource.cache
+C:\Users\acacio.sribeiro1\source\repos\TabuadaComLoop\obj\Debug\TabuadaComLoop.csproj.CoreCompileInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\TabuadaComLoop\obj\Debug\TabuadaComLoop.exe
+C:\Users\acacio.sribeiro1\source\repos\TabuadaComLoop\obj\Debug\TabuadaComLoop.pdb
+C:\Users\acacio.sribeiro1\source\repos\TabuadaComLoop\obj\Debug\TabuadaComLoop.exe.config

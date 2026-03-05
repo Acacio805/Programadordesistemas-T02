@@ -32,7 +32,7 @@
             this.lblDigiteNumero = new System.Windows.Forms.Label();
             this.btnEnter = new System.Windows.Forms.Button();
             this.txtDiadaSemana = new System.Windows.Forms.Label();
-            this.lblDia = new System.Windows.Forms.Label();
+            this.lblHojee = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNumero
@@ -40,7 +40,7 @@
             this.txtNumero.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumero.Location = new System.Drawing.Point(238, 6);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(100, 42);
+            this.txtNumero.Size = new System.Drawing.Size(38, 42);
             this.txtNumero.TabIndex = 0;
             // 
             // lblDigiteNumero
@@ -56,7 +56,7 @@
             // btnEnter
             // 
             this.btnEnter.Font = new System.Drawing.Font("Roboto", 21.75F);
-            this.btnEnter.Location = new System.Drawing.Point(344, 6);
+            this.btnEnter.Location = new System.Drawing.Point(431, 6);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(103, 42);
             this.btnEnter.TabIndex = 2;
@@ -68,33 +68,35 @@
             // 
             this.txtDiadaSemana.AutoSize = true;
             this.txtDiadaSemana.Font = new System.Drawing.Font("Roboto", 21.75F);
-            this.txtDiadaSemana.Location = new System.Drawing.Point(130, 158);
+            this.txtDiadaSemana.Location = new System.Drawing.Point(136, 87);
             this.txtDiadaSemana.Name = "txtDiadaSemana";
             this.txtDiadaSemana.Size = new System.Drawing.Size(194, 35);
             this.txtDiadaSemana.TabIndex = 3;
             this.txtDiadaSemana.Text = "DiadaSemana";
             // 
-            // lblDia
+            // lblHojee
             // 
-            this.lblDia.AutoSize = true;
-            this.lblDia.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDia.Location = new System.Drawing.Point(6, 158);
-            this.lblDia.Name = "lblDia";
-            this.lblDia.Size = new System.Drawing.Size(118, 35);
-            this.lblDia.TabIndex = 4;
-            this.lblDia.Text = "Hoje é : ";
+            this.lblHojee.AutoSize = true;
+            this.lblHojee.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHojee.Location = new System.Drawing.Point(12, 87);
+            this.lblHojee.Name = "lblHojee";
+            this.lblHojee.Size = new System.Drawing.Size(118, 35);
+            this.lblHojee.TabIndex = 4;
+            this.lblHojee.Text = "Hoje é : ";
             // 
             // frmDiadaSemana
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblDia);
+            this.BackColor = System.Drawing.Color.OliveDrab;
+            this.ClientSize = new System.Drawing.Size(546, 131);
+            this.Controls.Add(this.lblHojee);
             this.Controls.Add(this.txtDiadaSemana);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.lblDigiteNumero);
             this.Controls.Add(this.txtNumero);
             this.Name = "frmDiadaSemana";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "t";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -107,7 +109,7 @@
         private System.Windows.Forms.Label lblDigiteNumero;
         private System.Windows.Forms.Button btnEnter;
         private System.Windows.Forms.Label txtDiadaSemana;
-        private System.Windows.Forms.Label lblDia;
+        private System.Windows.Forms.Label lblHojee;
     }
 }
 

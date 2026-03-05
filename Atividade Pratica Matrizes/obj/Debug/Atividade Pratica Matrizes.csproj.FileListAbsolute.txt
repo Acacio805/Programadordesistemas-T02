@@ -1,0 +1,11 @@
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Matrizes\bin\Debug\Atividade Pratica Matrizes.exe.config
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Matrizes\bin\Debug\Atividade Pratica Matrizes.exe
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Matrizes\bin\Debug\Atividade Pratica Matrizes.pdb
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Matrizes\obj\Debug\Atividade Pratica Matrizes.csproj.AssemblyReference.cache
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Matrizes\obj\Debug\Atividade_Pratica_Matrizes.Properties.Resources.resources
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Matrizes\obj\Debug\Atividade Pratica Matrizes.csproj.GenerateResource.cache
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Matrizes\obj\Debug\Atividade Pratica Matrizes.csproj.CoreCompileInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Matrizes\obj\Debug\Atividade Pratica Matrizes.exe
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Matrizes\obj\Debug\Atividade Pratica Matrizes.pdb
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Matrizes\obj\Debug\Atividade Pratica Matrizes.exe.config
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Matrizes\obj\Debug\Atividade_Pratica_Matrizes.frmCadastro.resources

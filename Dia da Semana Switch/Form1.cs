@@ -16,9 +16,7 @@ namespace Dia_da_Semana_Switch
         {
             InitializeComponent();
             txtDiadaSemana.Text = string.Empty;
-        }
-
-        
+        }        
         
         private void btnEnter_Click(object sender, EventArgs e)
         {

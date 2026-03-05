@@ -1,0 +1,17 @@
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\bin\Debug\net8.0-windows\arrayunidirecional-vetor.exe
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\bin\Debug\net8.0-windows\arrayunidirecional-vetor.deps.json
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\bin\Debug\net8.0-windows\arrayunidirecional-vetor.runtimeconfig.json
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\bin\Debug\net8.0-windows\arrayunidirecional-vetor.dll
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\bin\Debug\net8.0-windows\arrayunidirecional-vetor.pdb
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\obj\Debug\net8.0-windows\arrayunidirecional_vetor.frmVetor.resources
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\obj\Debug\net8.0-windows\arrayunidirecional-vetor.csproj.GenerateResource.cache
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\obj\Debug\net8.0-windows\arrayunidirecional-vetor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\obj\Debug\net8.0-windows\arrayunidirecional-vetor.AssemblyInfoInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\obj\Debug\net8.0-windows\arrayunidirecional-vetor.AssemblyInfo.cs
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\obj\Debug\net8.0-windows\arrayunidirecional-vetor.csproj.CoreCompileInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\obj\Debug\net8.0-windows\arrayunidirecional-vetor.sourcelink.json
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\obj\Debug\net8.0-windows\arrayunidirecional-vetor.dll
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\obj\Debug\net8.0-windows\refint\arrayunidirecional-vetor.dll
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\obj\Debug\net8.0-windows\arrayunidirecional-vetor.pdb
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\obj\Debug\net8.0-windows\arrayunidirecional-vetor.genruntimeconfig.cache
+C:\Users\acacio.sribeiro1\source\repos\arrayunidirecional-vetor\obj\Debug\net8.0-windows\ref\arrayunidirecional-vetor.dll
