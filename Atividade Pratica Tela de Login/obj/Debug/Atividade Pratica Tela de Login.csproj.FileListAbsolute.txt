@@ -1,0 +1,12 @@
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Tela de Login\bin\Debug\Atividade Pratica Tela de Login.exe.config
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Tela de Login\bin\Debug\Atividade Pratica Tela de Login.exe
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Tela de Login\bin\Debug\Atividade Pratica Tela de Login.pdb
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Tela de Login\obj\Debug\Atividade Pratica Tela de Login.csproj.AssemblyReference.cache
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Tela de Login\obj\Debug\Atividade_Pratica_Tela_de_Login.frmLogin.resources
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Tela de Login\obj\Debug\Atividade_Pratica_Tela_de_Login.Properties.Resources.resources
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Tela de Login\obj\Debug\Atividade Pratica Tela de Login.csproj.GenerateResource.cache
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Tela de Login\obj\Debug\Atividade Pratica Tela de Login.csproj.CoreCompileInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Tela de Login\obj\Debug\Atividade Pratica Tela de Login.exe
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Tela de Login\obj\Debug\Atividade Pratica Tela de Login.pdb
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Tela de Login\obj\Debug\Atividade Pratica Tela de Login.exe.config
+C:\Users\acacio.sribeiro1\source\repos\Atividade Pratica Tela de Login\obj\Debug\Atividade_Pratica_Tela_de_Login.frmBemVindo.resources

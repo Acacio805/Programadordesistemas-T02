@@ -1,0 +1,11 @@
+C:\Users\acacio.sribeiro1\source\repos\Menu SideBar\bin\Debug\Menu SideBar.exe.config
+C:\Users\acacio.sribeiro1\source\repos\Menu SideBar\bin\Debug\Menu SideBar.exe
+C:\Users\acacio.sribeiro1\source\repos\Menu SideBar\bin\Debug\Menu SideBar.pdb
+C:\Users\acacio.sribeiro1\source\repos\Menu SideBar\obj\Debug\Menu SideBar.csproj.AssemblyReference.cache
+C:\Users\acacio.sribeiro1\source\repos\Menu SideBar\obj\Debug\Menu_SideBar.Properties.Resources.resources
+C:\Users\acacio.sribeiro1\source\repos\Menu SideBar\obj\Debug\Menu SideBar.csproj.GenerateResource.cache
+C:\Users\acacio.sribeiro1\source\repos\Menu SideBar\obj\Debug\Menu SideBar.csproj.CoreCompileInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\Menu SideBar\obj\Debug\Menu SideBar.exe
+C:\Users\acacio.sribeiro1\source\repos\Menu SideBar\obj\Debug\Menu SideBar.pdb
+C:\Users\acacio.sribeiro1\source\repos\Menu SideBar\obj\Debug\Menu SideBar.exe.config
+C:\Users\acacio.sribeiro1\source\repos\Menu SideBar\obj\Debug\Menu_SideBar.frmSidebar.resources
