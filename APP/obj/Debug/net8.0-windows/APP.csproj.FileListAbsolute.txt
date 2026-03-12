@@ -5,9 +5,6 @@ C:\Users\acacio.sribeiro1\source\repos\APP\bin\Debug\net8.0-windows\APP.dll
 C:\Users\acacio.sribeiro1\source\repos\APP\bin\Debug\net8.0-windows\APP.pdb
 C:\Users\acacio.sribeiro1\source\repos\APP\bin\Debug\net8.0-windows\pt-BR\APP.resources.dll
 C:\Users\acacio.sribeiro1\source\repos\APP\bin\Debug\net8.0-windows\zu\APP.resources.dll
-C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.frmCommicao.resources
-C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.frmCommicao.pt-BR.resources
-C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.frmCommicao.zu.resources
 C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.csproj.GenerateResource.cache
 C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.AssemblyInfoInputs.cache
@@ -21,3 +18,8 @@ C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\refint\APP.d
 C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.pdb
 C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.genruntimeconfig.cache
 C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\ref\APP.dll
+C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.csproj.ResolveComReference.cache
+C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.frm3DCreativeDesign.resources
+C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.frm3DCreativeDesign.pt-BR.resources
+C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.frm3DCreativeDesign.zu.resources

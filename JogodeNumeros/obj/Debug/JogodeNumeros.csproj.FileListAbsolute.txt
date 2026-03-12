@@ -8,3 +8,4 @@ C:\Users\acacio.sribeiro1\source\repos\JogodeNumeros\obj\Debug\JogodeNumeros.csp
 C:\Users\acacio.sribeiro1\source\repos\JogodeNumeros\obj\Debug\JogodeNumeros.csproj.CoreCompileInputs.cache
 C:\Users\acacio.sribeiro1\source\repos\JogodeNumeros\obj\Debug\JogodeNumeros.exe
 C:\Users\acacio.sribeiro1\source\repos\JogodeNumeros\obj\Debug\JogodeNumeros.pdb
+C:\Users\acacio.sribeiro1\source\repos\JogodeNumeros\obj\Debug\JogodeNumeros.exe.config

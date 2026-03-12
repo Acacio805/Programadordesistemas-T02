@@ -23,7 +23,7 @@ namespace Atividade_Pratica_Tela_de_Login
         string Usuario = "usuario";
         string senha = "senha123";
 
-        bool logado = false;
+        public bool logado { get; set; } = false; 
         bool bloqueado = false;
         int counter = 3;
 

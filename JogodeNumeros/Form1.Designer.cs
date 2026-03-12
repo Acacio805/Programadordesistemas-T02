@@ -85,9 +85,10 @@
             // 
             this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResultado.ForeColor = System.Drawing.Color.Red;
-            this.txtResultado.Location = new System.Drawing.Point(155, 407);
+            this.txtResultado.Location = new System.Drawing.Point(12, 407);
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(476, 31);
+            this.txtResultado.ReadOnly = true;
+            this.txtResultado.Size = new System.Drawing.Size(776, 31);
             this.txtResultado.TabIndex = 3;
             this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
