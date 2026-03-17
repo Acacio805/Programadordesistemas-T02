@@ -1,0 +1,12 @@
+C:\Users\acacio.sribeiro1\source\repos\testando-showhide\bin\Debug\testando-showhide.exe.config
+C:\Users\acacio.sribeiro1\source\repos\testando-showhide\bin\Debug\testando-showhide.exe
+C:\Users\acacio.sribeiro1\source\repos\testando-showhide\bin\Debug\testando-showhide.pdb
+C:\Users\acacio.sribeiro1\source\repos\testando-showhide\obj\Debug\testando-showhide.csproj.AssemblyReference.cache
+C:\Users\acacio.sribeiro1\source\repos\testando-showhide\obj\Debug\testando_showhide.frmShowHide.resources
+C:\Users\acacio.sribeiro1\source\repos\testando-showhide\obj\Debug\testando_showhide.Properties.Resources.resources
+C:\Users\acacio.sribeiro1\source\repos\testando-showhide\obj\Debug\testando-showhide.csproj.GenerateResource.cache
+C:\Users\acacio.sribeiro1\source\repos\testando-showhide\obj\Debug\testando-showhide.csproj.CoreCompileInputs.cache
+C:\Users\acacio.sribeiro1\source\repos\testando-showhide\obj\Debug\testando-showhide.exe
+C:\Users\acacio.sribeiro1\source\repos\testando-showhide\obj\Debug\testando-showhide.pdb
+C:\Users\acacio.sribeiro1\source\repos\testando-showhide\obj\Debug\testando-showhide.exe.config
+C:\Users\acacio.sribeiro1\source\repos\testando-showhide\obj\Debug\testando_showhide.frmHome.resources

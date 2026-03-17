@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "APPACACIO (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "APPACACIO (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
