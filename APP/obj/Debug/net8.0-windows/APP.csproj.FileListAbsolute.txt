@@ -23,3 +23,4 @@ C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.csproj.R
 C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.frm3DCreativeDesign.resources
 C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.frm3DCreativeDesign.pt-BR.resources
 C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.frm3DCreativeDesign.zu.resources
+C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.Properties.Resources.resources

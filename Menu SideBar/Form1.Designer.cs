@@ -32,26 +32,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panelHome = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
-            this.panel5 = new System.Windows.Forms.Panel();
             this.menuButton = new System.Windows.Forms.PictureBox();
+            this.panelHome = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnConfig = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.btnAjuda = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btnSobre = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.panelHome.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -89,53 +89,8 @@
             this.panel2.Controls.Add(this.menuButton);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(274, 117);
+            this.panel2.Size = new System.Drawing.Size(280, 117);
             this.panel2.TabIndex = 0;
-            // 
-            // panelHome
-            // 
-            this.panelHome.Controls.Add(this.btnHome);
-            this.panelHome.Location = new System.Drawing.Point(3, 126);
-            this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(274, 54);
-            this.panelHome.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnConfig);
-            this.panel1.Location = new System.Drawing.Point(3, 186);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(274, 54);
-            this.panel1.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnAjuda);
-            this.panel3.Location = new System.Drawing.Point(3, 246);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(274, 54);
-            this.panel3.TabIndex = 4;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnSobre);
-            this.panel4.Location = new System.Drawing.Point(3, 306);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(274, 54);
-            this.panel4.TabIndex = 5;
-            // 
-            // sidebarTimer
-            // 
-            this.sidebarTimer.Interval = 5;
-            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.button1);
-            this.panel5.Location = new System.Drawing.Point(3, 366);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(274, 54);
-            this.panel5.TabIndex = 6;
             // 
             // menuButton
             // 
@@ -149,6 +104,14 @@
             this.menuButton.TabIndex = 0;
             this.menuButton.TabStop = false;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // panelHome
+            // 
+            this.panelHome.Controls.Add(this.btnHome);
+            this.panelHome.Location = new System.Drawing.Point(3, 126);
+            this.panelHome.Name = "panelHome";
+            this.panelHome.Size = new System.Drawing.Size(274, 54);
+            this.panelHome.TabIndex = 1;
             // 
             // btnHome
             // 
@@ -165,6 +128,14 @@
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnConfig);
+            this.panel1.Location = new System.Drawing.Point(3, 186);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(274, 54);
+            this.panel1.TabIndex = 3;
+            // 
             // btnConfig
             // 
             this.btnConfig.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -179,6 +150,14 @@
             this.btnConfig.Text = "                    Configurações";
             this.btnConfig.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConfig.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnAjuda);
+            this.panel3.Location = new System.Drawing.Point(3, 246);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(274, 54);
+            this.panel3.TabIndex = 4;
             // 
             // btnAjuda
             // 
@@ -195,6 +174,14 @@
             this.btnAjuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAjuda.UseVisualStyleBackColor = false;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnSobre);
+            this.panel4.Location = new System.Drawing.Point(3, 306);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(274, 54);
+            this.panel4.TabIndex = 5;
+            // 
             // btnSobre
             // 
             this.btnSobre.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -209,6 +196,14 @@
             this.btnSobre.Text = "                    Sobre";
             this.btnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSobre.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.button1);
+            this.panel5.Location = new System.Drawing.Point(3, 366);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(274, 54);
+            this.panel5.TabIndex = 6;
             // 
             // button1
             // 
@@ -225,6 +220,11 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 5;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
+            // 
             // frmSidebar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,12 +238,12 @@
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.panelHome.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.ResumeLayout(false);
 
         }
