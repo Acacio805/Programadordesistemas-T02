@@ -5,25 +5,38 @@ namespace APP
 {
     public partial class frm3DCreativeDesign : Form
     {
-        Excel.Application app = new Excel.Application();
-        Workbook pasta;
-        Worksheet plan;
-        string path = @"C:\Users\acacio.sribeiro1\OneDrive - SENAC - SP\DATABASE.xlsx"; //C:\Users\acacio.sribeiro1\OneDrive - SENAC - SP\DATABASE.xlsx
 
         public frm3DCreativeDesign()
         {
             InitializeComponent();
-            pasta = app.Workbooks.Open(path);
-            plan = pasta.Worksheets["plan"];
 
-            txtNome.Text = plan.Cells[3, 6].Value.ToString();
-            txtTipo.Text = plan.Cells[3, 7].Value.ToString();
+            panelLeftWhite.Size = new System.Drawing.Size(2, 691);
+
+            this.DoubleBuffered = true;
         }
 
-        private void frm3DCreativeDesign_FormClosed(object sender, FormClosedEventArgs e)
+        private void MyForm_Resize(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
-            app.Quit();
+            // Force the form to redraw its background
+            this.Invalidate();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmFormulario novoForm = new frmFormulario();
+            novoForm.Show();
+        }
+
+
+        private void btnTrash_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDetalhes_Click(object sender, EventArgs e)
+        {
+            frmPedido novoForm = new frmPedido();
+            novoForm.Show();
         }
     }
 }

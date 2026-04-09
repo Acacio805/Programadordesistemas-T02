@@ -29,57 +29,42 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm3DCreativeDesign));
-            panelTop = new Panel();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            panelPedidos = new Panel();
             panelPedido = new Panel();
             txtNome = new TextBox();
-            cbComecar = new CheckBox();
             txtTipo = new TextBox();
+            btnDetalhes = new Button();
             labelPedidos = new Label();
+            flpanelPedidosNovos = new FlowLayoutPanel();
+            panelLeft = new GPanel.GradientPanel();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            panelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            btnTrash = new PictureBox();
+            btnSettings = new PictureBox();
+            btnAdd = new PictureBox();
+            panelLeftWhite = new Panel();
+            pictureBox2 = new PictureBox();
+            panelBackground = new GPanel.GradientPanel();
+            flpanelPedidosConcluidos = new FlowLayoutPanel();
+            label1 = new Label();
+            gradientPanel1 = new GPanel.GradientPanel();
             panelPedido.SuspendLayout();
+            flpanelPedidosNovos.SuspendLayout();
+            panelLeft.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnTrash).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnSettings).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnAdd).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panelBackground.SuspendLayout();
+            flpanelPedidosConcluidos.SuspendLayout();
             SuspendLayout();
-            // 
-            // panelTop
-            // 
-            resources.ApplyResources(panelTop, "panelTop");
-            panelTop.BackColor = Color.Navy;
-            panelTop.Controls.Add(pictureBox2);
-            panelTop.Controls.Add(pictureBox1);
-            panelTop.Name = "panelTop";
-            // 
-            // pictureBox2
-            // 
-            resources.ApplyResources(pictureBox2, "pictureBox2");
-            pictureBox2.Image = Properties.Resources.Logotipo;
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(pictureBox1, "pictureBox1");
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.TabStop = false;
-            // 
-            // panelPedidos
-            // 
-            resources.ApplyResources(panelPedidos, "panelPedidos");
-            panelPedidos.BackColor = Color.DarkMagenta;
-            panelPedidos.Name = "panelPedidos";
             // 
             // panelPedido
             // 
             resources.ApplyResources(panelPedido, "panelPedido");
             panelPedido.BackColor = Color.White;
             panelPedido.Controls.Add(txtNome);
-            panelPedido.Controls.Add(cbComecar);
             panelPedido.Controls.Add(txtTipo);
+            panelPedido.Controls.Add(btnDetalhes);
             panelPedido.Name = "panelPedido";
             // 
             // txtNome
@@ -88,61 +73,176 @@
             txtNome.Name = "txtNome";
             txtNome.ReadOnly = true;
             // 
-            // cbComecar
-            // 
-            resources.ApplyResources(cbComecar, "cbComecar");
-            cbComecar.ForeColor = Color.Black;
-            cbComecar.Name = "cbComecar";
-            cbComecar.UseVisualStyleBackColor = true;
-            // 
             // txtTipo
             // 
             resources.ApplyResources(txtTipo, "txtTipo");
             txtTipo.Name = "txtTipo";
             txtTipo.ReadOnly = true;
             // 
+            // btnDetalhes
+            // 
+            resources.ApplyResources(btnDetalhes, "btnDetalhes");
+            btnDetalhes.BackColor = Color.LightGray;
+            btnDetalhes.Cursor = Cursors.Hand;
+            btnDetalhes.ForeColor = SystemColors.ButtonShadow;
+            btnDetalhes.Image = Properties.Resources.more_horiz_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24;
+            btnDetalhes.Name = "btnDetalhes";
+            btnDetalhes.UseVisualStyleBackColor = false;
+            btnDetalhes.Click += btnDetalhes_Click;
+            // 
             // labelPedidos
             // 
             resources.ApplyResources(labelPedidos, "labelPedidos");
             labelPedidos.Name = "labelPedidos";
             // 
+            // flpanelPedidosNovos
+            // 
+            resources.ApplyResources(flpanelPedidosNovos, "flpanelPedidosNovos");
+            flpanelPedidosNovos.BackColor = Color.LightGray;
+            flpanelPedidosNovos.Controls.Add(labelPedidos);
+            flpanelPedidosNovos.Controls.Add(panelPedido);
+            flpanelPedidosNovos.Name = "flpanelPedidosNovos";
+            // 
+            // panelLeft
+            // 
+            resources.ApplyResources(panelLeft, "panelLeft");
+            panelLeft.Angle = 90F;
+            panelLeft.BottomColor = Color.Purple;
+            panelLeft.Controls.Add(flowLayoutPanel1);
+            panelLeft.Controls.Add(panelLeftWhite);
+            panelLeft.Controls.Add(pictureBox2);
+            panelLeft.Name = "panelLeft";
+            panelLeft.TopColor = Color.DarkBlue;
+            // 
             // flowLayoutPanel1
             // 
             resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
-            flowLayoutPanel1.BackColor = Color.LightGray;
-            flowLayoutPanel1.Controls.Add(labelPedidos);
-            flowLayoutPanel1.Controls.Add(panelPedido);
+            flowLayoutPanel1.BackColor = Color.Transparent;
+            flowLayoutPanel1.Controls.Add(btnTrash);
+            flowLayoutPanel1.Controls.Add(btnSettings);
+            flowLayoutPanel1.Controls.Add(btnAdd);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // btnTrash
+            // 
+            resources.ApplyResources(btnTrash, "btnTrash");
+            btnTrash.BackColor = Color.Transparent;
+            btnTrash.Cursor = Cursors.Hand;
+            btnTrash.ErrorImage = Properties.Resources.add_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnTrash.Image = Properties.Resources.delete_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnTrash.InitialImage = Properties.Resources.settings_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnTrash.Name = "btnTrash";
+            btnTrash.TabStop = false;
+            btnTrash.MouseHover += btnTrash_MouseHover;
+            // 
+            // btnSettings
+            // 
+            resources.ApplyResources(btnSettings, "btnSettings");
+            btnSettings.BackColor = Color.Transparent;
+            btnSettings.Cursor = Cursors.Hand;
+            btnSettings.ErrorImage = Properties.Resources.add_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnSettings.Image = Properties.Resources.settings_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnSettings.InitialImage = Properties.Resources.settings_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnSettings.Name = "btnSettings";
+            btnSettings.TabStop = false;
+            // 
+            // btnAdd
+            // 
+            resources.ApplyResources(btnAdd, "btnAdd");
+            btnAdd.BackColor = Color.Transparent;
+            btnAdd.Cursor = Cursors.Hand;
+            btnAdd.ErrorImage = Properties.Resources.add_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnAdd.Image = Properties.Resources.add_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnAdd.InitialImage = Properties.Resources.settings_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnAdd.Name = "btnAdd";
+            btnAdd.TabStop = false;
+            btnAdd.Click += btnAdd_Click;
+            // 
+            // panelLeftWhite
+            // 
+            resources.ApplyResources(panelLeftWhite, "panelLeftWhite");
+            panelLeftWhite.Name = "panelLeftWhite";
+            // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(pictureBox2, "pictureBox2");
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = Properties.Resources.logo;
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.TabStop = false;
+            // 
+            // panelBackground
+            // 
+            resources.ApplyResources(panelBackground, "panelBackground");
+            panelBackground.Angle = 45F;
+            panelBackground.BottomColor = Color.Purple;
+            panelBackground.Controls.Add(flpanelPedidosConcluidos);
+            panelBackground.Controls.Add(gradientPanel1);
+            panelBackground.Controls.Add(flpanelPedidosNovos);
+            panelBackground.Name = "panelBackground";
+            panelBackground.TopColor = Color.Aqua;
+            // 
+            // flpanelPedidosConcluidos
+            // 
+            resources.ApplyResources(flpanelPedidosConcluidos, "flpanelPedidosConcluidos");
+            flpanelPedidosConcluidos.BackColor = Color.LightGray;
+            flpanelPedidosConcluidos.Controls.Add(label1);
+            flpanelPedidosConcluidos.Name = "flpanelPedidosConcluidos";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
+            // 
+            // gradientPanel1
+            // 
+            resources.ApplyResources(gradientPanel1, "gradientPanel1");
+            gradientPanel1.Angle = 0F;
+            gradientPanel1.BottomColor = Color.Purple;
+            gradientPanel1.Name = "gradientPanel1";
+            gradientPanel1.TopColor = Color.Navy;
             // 
             // frm3DCreativeDesign
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(flowLayoutPanel1);
-            Controls.Add(panelPedidos);
-            Controls.Add(panelTop);
+            Controls.Add(panelBackground);
+            Controls.Add(panelLeft);
             Name = "frm3DCreativeDesign";
-            FormClosed += frm3DCreativeDesign_FormClosed;
-            panelTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            WindowState = FormWindowState.Maximized;
             panelPedido.ResumeLayout(false);
             panelPedido.PerformLayout();
+            flpanelPedidosNovos.ResumeLayout(false);
+            flpanelPedidosNovos.PerformLayout();
+            panelLeft.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
-            flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)btnTrash).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnSettings).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnAdd).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panelBackground.ResumeLayout(false);
+            flpanelPedidosConcluidos.ResumeLayout(false);
+            flpanelPedidosConcluidos.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-        private Panel panelTop;
-        private Panel panelPedidos;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
         private Panel panelPedido;
         private TextBox txtNome;
-        private CheckBox cbComecar;
         private TextBox txtTipo;
         private Label labelPedidos;
+        private FlowLayoutPanel flpanelPedidosNovos;
+        private GPanel.GradientPanel panelLeft;
+        private PictureBox btnAdd;
+        private PictureBox btnTrash;
+        private PictureBox btnSettings;
+        private GPanel.GradientPanel panelBackground;
+        private GPanel.GradientPanel gradientPanel1;
+        private PictureBox pictureBox2;
+        private Panel panelLeftWhite;
+        private FlowLayoutPanel flpanelPedidosConcluidos;
+        private Label label1;
+        private Button btnDetalhes;
         private FlowLayoutPanel flowLayoutPanel1;
     }
 }
