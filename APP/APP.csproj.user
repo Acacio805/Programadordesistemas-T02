@@ -13,5 +13,8 @@
     <Compile Update="GradientPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

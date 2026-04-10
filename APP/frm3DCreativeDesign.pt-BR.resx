@@ -117,7 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 73</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 27</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 73</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 27</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
   <data name="txtNome.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 12</value>
   </data>
@@ -130,9 +156,11 @@
   <data name="txtTipo.Size" type="System.Drawing.Size, System.Drawing">
     <value>353, 23</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnDetalhes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="btnDetalhes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 73</value>
   </data>
   <data name="btnDetalhes.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 27</value>
@@ -145,9 +173,8 @@
     <value>8, 8, 8, 8</value>
   </data>
   <data name="panelPedido.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 105</value>
+    <value>361, 111</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelPedidos.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -165,6 +192,15 @@
   </data>
   <data name="labelPedidos.Text" xml:space="preserve">
     <value>Pedidos Novos</value>
+  </data>
+  <data name="butaoTeste.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="butaoTeste.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 63</value>
+  </data>
+  <data name="butaoTeste.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
   </data>
   <data name="flpanelPedidosNovos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>8, 8, 8, 8</value>
