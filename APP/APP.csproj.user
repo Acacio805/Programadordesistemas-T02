@@ -13,8 +13,14 @@
     <Compile Update="GradientPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="RoundedFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="RoundedPanel.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="RoundedTextBox.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>

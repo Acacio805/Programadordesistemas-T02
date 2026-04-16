@@ -8,8 +8,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{380A7511-A354-6D7A-0CC0-8FA1F1BA7B6C}"
 	ProjectSection(SolutionItems) = preProject
 		Class1.cs = Class1.cs
+		Class2.cs = Class2.cs
 		GradientPanel.cs = GradientPanel.cs
+		RoundedFlowPanel.cs = RoundedFlowPanel.cs
 		RoundedPanel.cs = RoundedPanel.cs
+		RoundedTextBox.cs = RoundedTextBox.cs
 	EndProjectSection
 EndProject
 Global

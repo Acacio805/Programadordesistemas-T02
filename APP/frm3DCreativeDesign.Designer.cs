@@ -30,12 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm3DCreativeDesign));
             panelPedido = new Panel();
+            button2 = new Button();
+            button1 = new Button();
             txtNome = new TextBox();
             txtTipo = new TextBox();
             btnDetalhes = new Button();
             labelPedidos = new Label();
-            flpanelPedidosNovos = new FlowLayoutPanel();
-            butaoTeste = new PictureBox();
+            butaoRecarregar = new PictureBox();
             panelLeft = new GPanel.GradientPanel();
             flowLayoutPanel1 = new FlowLayoutPanel();
             btnTrash = new PictureBox();
@@ -44,14 +45,14 @@
             panelLeftWhite = new Panel();
             pictureBox2 = new PictureBox();
             panelBackground = new GPanel.GradientPanel();
-            flpanelPedidosConcluidos = new FlowLayoutPanel();
-            label1 = new Label();
+            flpanelPedidosNovos = new Rflp.RoundedFlowLayoutPanel();
             gradientPanel1 = new GPanel.GradientPanel();
-            button1 = new Button();
-            button2 = new Button();
+            btnPesquisar = new PictureBox();
+            txtPesquisar = new Rtxt.RoundedTextBox();
+            roundedFlowLayoutPanel1 = new Rflp.RoundedFlowLayoutPanel();
+            label1 = new Label();
             panelPedido.SuspendLayout();
-            flpanelPedidosNovos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)butaoTeste).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)butaoRecarregar).BeginInit();
             panelLeft.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnTrash).BeginInit();
@@ -59,7 +60,10 @@
             ((System.ComponentModel.ISupportInitialize)btnAdd).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panelBackground.SuspendLayout();
-            flpanelPedidosConcluidos.SuspendLayout();
+            flpanelPedidosNovos.SuspendLayout();
+            gradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnPesquisar).BeginInit();
+            roundedFlowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // panelPedido
@@ -72,6 +76,25 @@
             panelPedido.Controls.Add(txtTipo);
             panelPedido.Controls.Add(btnDetalhes);
             panelPedido.Name = "panelPedido";
+            panelPedido.Paint += panelPedido_Paint;
+            // 
+            // button2
+            // 
+            resources.ApplyResources(button2, "button2");
+            button2.BackColor = Color.Maroon;
+            button2.Cursor = Cursors.Hand;
+            button2.ForeColor = SystemColors.ButtonShadow;
+            button2.Name = "button2";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(button1, "button1");
+            button1.BackColor = Color.DarkGreen;
+            button1.Cursor = Cursors.Hand;
+            button1.ForeColor = SystemColors.ButtonShadow;
+            button1.Name = "button1";
+            button1.UseVisualStyleBackColor = false;
             // 
             // txtNome
             // 
@@ -101,26 +124,17 @@
             resources.ApplyResources(labelPedidos, "labelPedidos");
             labelPedidos.Name = "labelPedidos";
             // 
-            // flpanelPedidosNovos
+            // butaoRecarregar
             // 
-            resources.ApplyResources(flpanelPedidosNovos, "flpanelPedidosNovos");
-            flpanelPedidosNovos.BackColor = Color.LightGray;
-            flpanelPedidosNovos.Controls.Add(labelPedidos);
-            flpanelPedidosNovos.Controls.Add(panelPedido);
-            flpanelPedidosNovos.Controls.Add(butaoTeste);
-            flpanelPedidosNovos.Name = "flpanelPedidosNovos";
-            // 
-            // butaoTeste
-            // 
-            resources.ApplyResources(butaoTeste, "butaoTeste");
-            butaoTeste.BackColor = Color.Transparent;
-            butaoTeste.Cursor = Cursors.Hand;
-            butaoTeste.ErrorImage = Properties.Resources.add_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
-            butaoTeste.Image = Properties.Resources.add_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
-            butaoTeste.InitialImage = Properties.Resources.settings_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
-            butaoTeste.Name = "butaoTeste";
-            butaoTeste.TabStop = false;
-            butaoTeste.Click += butaoTeste_Click;
+            resources.ApplyResources(butaoRecarregar, "butaoRecarregar");
+            butaoRecarregar.BackColor = Color.Transparent;
+            butaoRecarregar.Cursor = Cursors.Hand;
+            butaoRecarregar.ErrorImage = Properties.Resources.add_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            butaoRecarregar.Image = Properties.Resources.refresh_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            butaoRecarregar.InitialImage = Properties.Resources.settings_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            butaoRecarregar.Name = "butaoRecarregar";
+            butaoRecarregar.TabStop = false;
+            butaoRecarregar.Click += butaoTeste_Click;
             // 
             // panelLeft
             // 
@@ -140,6 +154,7 @@
             // 
             resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
             flowLayoutPanel1.BackColor = Color.Transparent;
+            flowLayoutPanel1.Controls.Add(butaoRecarregar);
             flowLayoutPanel1.Controls.Add(btnTrash);
             flowLayoutPanel1.Controls.Add(btnSettings);
             flowLayoutPanel1.Controls.Add(btnAdd);
@@ -200,24 +215,21 @@
             panelBackground.Angle = 45F;
             panelBackground.BackColor = Color.White;
             panelBackground.BottomColor = Color.Purple;
-            panelBackground.Controls.Add(flpanelPedidosConcluidos);
-            panelBackground.Controls.Add(gradientPanel1);
             panelBackground.Controls.Add(flpanelPedidosNovos);
+            panelBackground.Controls.Add(panelPedido);
+            panelBackground.Controls.Add(gradientPanel1);
+            panelBackground.Controls.Add(roundedFlowLayoutPanel1);
             panelBackground.CornerRadius = 20;
             panelBackground.Name = "panelBackground";
             panelBackground.TopColor = Color.Aqua;
             // 
-            // flpanelPedidosConcluidos
+            // flpanelPedidosNovos
             // 
-            resources.ApplyResources(flpanelPedidosConcluidos, "flpanelPedidosConcluidos");
-            flpanelPedidosConcluidos.BackColor = Color.LightGray;
-            flpanelPedidosConcluidos.Controls.Add(label1);
-            flpanelPedidosConcluidos.Name = "flpanelPedidosConcluidos";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(label1, "label1");
-            label1.Name = "label1";
+            resources.ApplyResources(flpanelPedidosNovos, "flpanelPedidosNovos");
+            flpanelPedidosNovos.BackColor = SystemColors.Control;
+            flpanelPedidosNovos.BorderRadius = 20;
+            flpanelPedidosNovos.Controls.Add(labelPedidos);
+            flpanelPedidosNovos.Name = "flpanelPedidosNovos";
             // 
             // gradientPanel1
             // 
@@ -226,27 +238,39 @@
             gradientPanel1.Angle = 0F;
             gradientPanel1.BackColor = Color.White;
             gradientPanel1.BottomColor = Color.Purple;
+            gradientPanel1.Controls.Add(btnPesquisar);
+            gradientPanel1.Controls.Add(txtPesquisar);
             gradientPanel1.CornerRadius = 0;
             gradientPanel1.Name = "gradientPanel1";
             gradientPanel1.TopColor = Color.Navy;
             // 
-            // button1
+            // btnPesquisar
             // 
-            resources.ApplyResources(button1, "button1");
-            button1.BackColor = Color.DarkGreen;
-            button1.Cursor = Cursors.Hand;
-            button1.ForeColor = SystemColors.ButtonShadow;
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = false;
+            resources.ApplyResources(btnPesquisar, "btnPesquisar");
+            btnPesquisar.BackColor = Color.Transparent;
+            btnPesquisar.Cursor = Cursors.Hand;
+            btnPesquisar.Image = Properties.Resources.search_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnPesquisar.Name = "btnPesquisar";
+            btnPesquisar.TabStop = false;
             // 
-            // button2
+            // txtPesquisar
             // 
-            resources.ApplyResources(button2, "button2");
-            button2.BackColor = Color.Maroon;
-            button2.Cursor = Cursors.Hand;
-            button2.ForeColor = SystemColors.ButtonShadow;
-            button2.Name = "button2";
-            button2.UseVisualStyleBackColor = false;
+            resources.ApplyResources(txtPesquisar, "txtPesquisar");
+            txtPesquisar.BackColor = Color.White;
+            txtPesquisar.Name = "txtPesquisar";
+            // 
+            // roundedFlowLayoutPanel1
+            // 
+            resources.ApplyResources(roundedFlowLayoutPanel1, "roundedFlowLayoutPanel1");
+            roundedFlowLayoutPanel1.BackColor = SystemColors.Control;
+            roundedFlowLayoutPanel1.BorderRadius = 20;
+            roundedFlowLayoutPanel1.Controls.Add(label1);
+            roundedFlowLayoutPanel1.Name = "roundedFlowLayoutPanel1";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
             // 
             // frm3DCreativeDesign
             // 
@@ -258,9 +282,7 @@
             WindowState = FormWindowState.Maximized;
             panelPedido.ResumeLayout(false);
             panelPedido.PerformLayout();
-            flpanelPedidosNovos.ResumeLayout(false);
-            flpanelPedidosNovos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)butaoTeste).EndInit();
+            ((System.ComponentModel.ISupportInitialize)butaoRecarregar).EndInit();
             panelLeft.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnTrash).EndInit();
@@ -268,8 +290,12 @@
             ((System.ComponentModel.ISupportInitialize)btnAdd).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panelBackground.ResumeLayout(false);
-            flpanelPedidosConcluidos.ResumeLayout(false);
-            flpanelPedidosConcluidos.PerformLayout();
+            flpanelPedidosNovos.ResumeLayout(false);
+            flpanelPedidosNovos.PerformLayout();
+            gradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnPesquisar).EndInit();
+            roundedFlowLayoutPanel1.ResumeLayout(false);
+            roundedFlowLayoutPanel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -278,7 +304,6 @@
         private TextBox txtNome;
         private TextBox txtTipo;
         private Label labelPedidos;
-        private FlowLayoutPanel flpanelPedidosNovos;
         private GPanel.GradientPanel panelLeft;
         private PictureBox btnAdd;
         private PictureBox btnTrash;
@@ -287,12 +312,16 @@
         private GPanel.GradientPanel gradientPanel1;
         private PictureBox pictureBox2;
         private Panel panelLeftWhite;
-        private FlowLayoutPanel flpanelPedidosConcluidos;
         private Label label1;
         private Button btnDetalhes;
         private FlowLayoutPanel flowLayoutPanel1;
-        private PictureBox butaoTeste;
+        private PictureBox butaoRecarregar;
         private Button button2;
         private Button button1;
+        private Rtxt.RoundedTextBox roundedTextBox1;
+        private Rtxt.RoundedTextBox txtPesquisar;
+        private PictureBox btnPesquisar;
+        private Rflp.RoundedFlowLayoutPanel flpanelPedidosNovos;
+        private Rflp.RoundedFlowLayoutPanel roundedFlowLayoutPanel1;
     }
 }

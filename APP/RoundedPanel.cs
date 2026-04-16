@@ -1,32 +1,37 @@
-﻿using System;
+﻿using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 
-public class RoundedPanel : Panel
+namespace RPanel
 {
-    public int CornerRadius { get; set; } = 20; // Raio do canto
-
-    protected override void OnPaint(PaintEventArgs e)
+    public class RoundedPanel : Panel
     {
-        base.OnPaint(e);
-        e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+        public int CornerRadius { get; set; } = 20;
 
-        using (GraphicsPath path = new GraphicsPath())
+        protected override void OnPaint(PaintEventArgs e)
         {
-            Rectangle rect = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
+            base.OnPaint(e);
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
-            // Desenha os cantos arredondados
-            path.AddArc(rect.X, rect.Y, CornerRadius, CornerRadius, 180, 90);
-            path.AddArc(rect.Width - CornerRadius, rect.Y, CornerRadius, CornerRadius, 270, 90);
-            path.AddArc(rect.Width - CornerRadius, rect.Height - CornerRadius, CornerRadius, CornerRadius, 0, 90);
-            path.AddArc(rect.X, rect.Height - CornerRadius, CornerRadius, CornerRadius, 90, 90);
-            path.CloseAllFigures();
-
-            this.Region = new Region(path); // Aplica o formato ao painel
-
-            // Desenha a borda (opcional)
-            using (Pen pen = new Pen(Color.LightGray, 2))
+            using (GraphicsPath path = new GraphicsPath())
             {
-                e.Graphics.DrawPath(pen, path);
+                float radius = CornerRadius;
+                float diameter = radius * 2;
+                RectangleF rect = new RectangleF(0, 0, this.Width, this.Height);
+
+                path.StartFigure();
+                // Top Left Arc
+                path.AddArc(rect.X, rect.Y, diameter, diameter, 180, 90);
+                // Top Right Arc
+                path.AddArc(rect.Right - diameter, rect.Y, diameter, diameter, 270, 90);
+                // Bottom Right Arc
+                path.AddArc(rect.Right - diameter, rect.Bottom - diameter, diameter, diameter, 0, 90);
+                // Bottom Left Arc
+                path.AddArc(rect.X, rect.Bottom - diameter, diameter, diameter, 90, 90);
+                path.CloseFigure();
+
+                // Set the region of the panel so it actually clips children
+                this.Region = new Region(path);
             }
         }
     }

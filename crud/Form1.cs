@@ -15,10 +15,13 @@ namespace crud
 {
     public partial class frmCadastrodeClientes : Form
     {
+        
         //Conexão com o banco de dados MySQL
         MySqlConnection Conexao;
         string data_source = "datasource=localhost; username=root; password=; database=db_cadastro";
-        
+
+        private int? codigo_cliente = null;
+
         public frmCadastrodeClientes()
         {
             InitializeComponent();
@@ -79,24 +82,57 @@ namespace crud
                 };
 
                 cmd.Prepare();
-                cmd.CommandText = "INSERT INTO dadosdocliente(nomecompleto, nomesocial, email, cpf) " + 
-                    "Values(@nomecompleto, @nomesocial, @email, @cpf)";
 
-                //Adiciona os parâmetros para os dados do formulário
-                cmd.Parameters.AddWithValue("@nomecompleto", txtNomeCompleto.Text.Trim());
-                cmd.Parameters.AddWithValue("@nomesocial", txtNomeSocial.Text.Trim());
-                cmd.Parameters.AddWithValue("@email", txtEmail.Text.Trim());
-                cmd.Parameters.AddWithValue("@cpf", txtCPF.Text.Trim());
-            
-                // Executa o comando de inserção no banco
-                cmd.ExecuteNonQuery();
+                if (codigo_cliente == null)
+                {
+                    //insert
+                    cmd.CommandText = "INSERT INTO dadosdocliente(nomecompleto, nomesocial, email, cpf) " +
+                                      "Values(@nomecompleto, @nomesocial, @email, @cpf)";
 
-                // Mensagem de sucesso
-                MessageBox.Show("Contato inserido com Sucesso: ", 
-                                "Sucesso", 
-                                MessageBoxButtons.OK, 
-                                MessageBoxIcon.Information);
+                    //Adiciona os parâmetros para os dados do formulário
+                    cmd.Parameters.AddWithValue("@nomecompleto", txtNomeCompleto.Text.Trim());
+                    cmd.Parameters.AddWithValue("@nomesocial", txtNomeSocial.Text.Trim());
+                    cmd.Parameters.AddWithValue("@email", txtEmail.Text.Trim());
+                    cmd.Parameters.AddWithValue("@cpf", txtCPF.Text.Trim());
 
+                    // Executa o comando de inserção no banco
+                    cmd.ExecuteNonQuery();
+
+                    // Mensagem de sucesso
+                    MessageBox.Show("Contato inserido com Sucesso: ",
+                                    "Sucesso",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
+                }
+                else
+                {
+                    //update
+                    cmd.CommandText = $"UPDATE dadosdocliente SET " +
+                    $"nomecompleto = @nomecompleto, " +
+                    $"nomesocial = @nomesocial, " +
+                    $"email = @email, " +
+                    $"cpf = @cpf " +
+                    $"WHERE codigo = @codigo";
+
+                    //Adiciona os parâmetros para os dados do formulário
+                    cmd.Parameters.AddWithValue("@nomecompleto", txtNomeCompleto.Text.Trim());
+                    cmd.Parameters.AddWithValue("@nomesocial", txtNomeSocial.Text.Trim());
+                    cmd.Parameters.AddWithValue("@email", txtEmail.Text.Trim());
+                    cmd.Parameters.AddWithValue("@cpf", cpf);
+                    cmd.Parameters.AddWithValue("@codigo", codigo_cliente);
+
+                    // Executa o comando de inserção no banco
+                    cmd.ExecuteNonQuery();
+
+                    // Mensagem de sucesso
+                    MessageBox.Show($"Os dados com o código {codigo_cliente} foram alterados com Sucesso.",
+                                    "Sucesso",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
+                }
+
+                codigo_cliente = null;
+                
                 // Limpa os campos após o sucesso
                 txtNomeCompleto.Text = String.Empty;
                 txtNomeSocial.Text = String.Empty;
@@ -106,7 +142,7 @@ namespace crud
                 // Recarregar os clientes na ListVIew
                 carregar_Clientes();
 
-                // Muda para a ba de consulta
+                // Muda para a aba de consulta
                 tabControl1.SelectedIndex = 1;
 
             }
@@ -214,6 +250,45 @@ namespace crud
             string query = "SELECT * FROM dadosdocliente ORDER BY codigo DESC";
             carregar_Clientes_com_query(query);
 
+        }
+
+        private void lstCliente_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
+        {
+            // Obtém a coleção de itens selecionados
+            ListView.SelectedListViewItemCollection clientedaselecao = lstCliente.SelectedItems;
+
+            // Percorre todos os itens selecionados (mesmo que normalmente só tenha um item selecionado)
+            foreach (ListViewItem item in clientedaselecao) 
+            { 
+                
+                codigo_cliente = Convert.ToInt32(item.SubItems[0].Text);              
+                
+                // Exibe uma MessageBox com o código do cliente
+                MessageBox.Show("Código do Cliente:" + codigo_cliente.ToString(),
+                                "Código selecionado",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+
+                
+                // Preenche os campos de texto com os dados do cliente selecionado
+                txtNomeCompleto.Text = item.SubItems[1].Text;  
+                txtNomeSocial.Text = item.SubItems[2].Text;
+                txtEmail.Text = item.SubItems[3].Text;
+                txtCPF.Text = item.SubItems[4].Text;
+            }
+        }
+
+        private void btnNovoCliente_Click(object sender, EventArgs e)
+        {
+            codigo_cliente = null;
+
+            // Limpa os campos
+            txtNomeCompleto.Text = String.Empty;
+            txtNomeSocial.Text = String.Empty;
+            txtEmail.Text = String.Empty;
+            txtCPF.Text = String.Empty;        
+
+            txtNomeCompleto.Focus();
         }
     }
 }

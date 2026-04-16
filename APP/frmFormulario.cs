@@ -1,24 +1,30 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+using APP;
 
 namespace APP
 {
     public partial class frmFormulario : Form
-    {
+    {        
+        private frm3DCreativeDesign _form1; // Variável para guardar a referência
+        
         string data_source =
             "datasource=localhost;username=root;password=;database=acacio3d";
-
-        public frmFormulario()
+        
+        // Modifique o construtor para receber o Form1
+        public frmFormulario(frm3DCreativeDesign f1)
         {
             InitializeComponent();
+            _form1 = f1;
         }
 
         private void btnAdicionarPedido_Click(object sender, EventArgs e)
@@ -31,6 +37,30 @@ namespace APP
                 {
                     try
                     {
+                        //Validade campos obrigatorios
+                        if (string.IsNullOrEmpty(txtNome.Text.Trim()))
+                        {
+                            MessageBox.Show("Nome não pode estar vazio.", "Validação",
+                                                MessageBoxButtons.OK,
+                                                MessageBoxIcon.Warning);
+                            return; // Impede o prosseguimento se algum campo estiver vazio
+                        }
+                        if (string.IsNullOrEmpty(txtEmail.Text.Trim()))
+                        {
+                            MessageBox.Show("Email não pode estar vazio.", "Validação",
+                                                MessageBoxButtons.OK,
+                                                MessageBoxIcon.Warning);
+                            return; // Impede o prosseguimento se algum campo estiver vazio
+                        }
+                        if (string.IsNullOrEmpty(cbTipodeModelo.Text.Trim()))
+                        {
+                            MessageBox.Show("Tipo de Modelo não pode estar vazio.", "Validação",
+                                                MessageBoxButtons.OK,
+                                                MessageBoxIcon.Warning);
+                            return; // Impede o prosseguimento se algum campo estiver vazio
+                        }
+
+
                         MySqlCommand cmd = new MySqlCommand();
                         cmd.Connection = conexao;
                         cmd.Transaction = transacao;
@@ -97,6 +127,9 @@ namespace APP
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information
                         );
+
+                        _form1.regarregarPedidos();
+
                     }
                     catch (Exception ex)
                     {
@@ -116,6 +149,7 @@ namespace APP
                             conexao.Close();
                         }
                     }
+
                 }
             }
         }
