@@ -131,14 +131,9 @@ namespace crud
                                     MessageBoxIcon.Information);
                 }
 
-                codigo_cliente = null;
+                //Limpa os campos após o sucesso
+                Limpar_Formulario();
                 
-                // Limpa os campos após o sucesso
-                txtNomeCompleto.Text = String.Empty;
-                txtNomeSocial.Text = String.Empty;
-                txtEmail.Text = String.Empty;
-                txtCPF.Text = String.Empty;
-
                 // Recarregar os clientes na ListVIew
                 carregar_Clientes();
 
@@ -264,7 +259,7 @@ namespace crud
                 codigo_cliente = Convert.ToInt32(item.SubItems[0].Text);              
                 
                 // Exibe uma MessageBox com o código do cliente
-                MessageBox.Show("Código do Cliente:" + codigo_cliente.ToString(),
+                MessageBox.Show("Código do Cliente: " + codigo_cliente.ToString(),
                                 "Código selecionado",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
@@ -275,20 +270,100 @@ namespace crud
                 txtNomeSocial.Text = item.SubItems[2].Text;
                 txtEmail.Text = item.SubItems[3].Text;
                 txtCPF.Text = item.SubItems[4].Text;
+
+                btnExcluirCliente.Visible = true;
             }
         }
 
         private void btnNovoCliente_Click(object sender, EventArgs e)
         {
-            codigo_cliente = null;
+            Limpar_Formulario();
+        }
 
-            // Limpa os campos
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            excluir_Cliente();
+        }
+
+        private void btnExcluirCliente_Click(object sender, EventArgs e)
+        {
+            excluir_Cliente();
+        }
+
+        private void excluir_Cliente()
+        {
+            try
+            {
+                DialogResult opcaoDigitada = MessageBox.Show("Tem certeza que desja exluir o registro de código " + codigo_cliente, "Tem certeza?",
+                                                             MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (opcaoDigitada == DialogResult.Yes)
+                {
+                    //Excluir no banco de dados
+                    Conexao = new MySqlConnection(data_source);
+                    Conexao.Open();
+
+                    MySqlCommand cmd = new MySqlCommand();
+
+                    cmd.Connection = Conexao;
+
+                    cmd.Prepare();
+
+                    cmd.CommandText = "DELETE FROM dadosdocliente WHERE codigo = @codigo";
+
+                    cmd.Parameters.AddWithValue("@codigo", codigo_cliente);
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Os dados do cliente foram excluídos.",
+                                    "Sucesso",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
+
+                    Limpar_Formulario();
+
+                    carregar_Clientes();
+
+                    // Muda para a aba de pesquisa
+                    tabControl1.SelectedIndex = 1;
+
+                    btnExcluirCliente.Visible = true;
+                    
+                }
+            }
+            catch (MySqlException ex)
+            {
+                // Trata erros relacionados ao MySQL
+                MessageBox.Show("Erro " + ex.Number + " Ocorreu: " + ex.Message,
+                                "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                // Trata outros tipos de erro
+                MessageBox.Show("Ocorreu: " + ex.Message,
+                                "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                // Garante que a conexão com o banco será fechada, mesmo se ocorrer erro
+                if (Conexao != null && Conexao.State == ConnectionState.Open)
+                {
+                    Conexao.Close();
+                }
+            }
+        }
+       
+        private void Limpar_Formulario()
+        {
+            codigo_cliente = null;
             txtNomeCompleto.Text = String.Empty;
             txtNomeSocial.Text = String.Empty;
             txtEmail.Text = String.Empty;
-            txtCPF.Text = String.Empty;        
+            txtCPF.Text = String.Empty;
 
             txtNomeCompleto.Focus();
+
+            btnExcluirCliente.Visible = false;
         }
     }
 }

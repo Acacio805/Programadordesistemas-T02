@@ -44,6 +44,13 @@ namespace APP
         {
             flpanelPedidosNovos.Controls.Clear();
 
+            System.Windows.Forms.Label lblPedidosNovos = new System.Windows.Forms.Label()
+            {
+                Text = "Pedidos Novos",
+            };
+
+            flpanelPedidosNovos.Controls.Add(lblPedidosNovos);
+
             List<Pedido> Comissao = new List<Pedido>();
 
             using (MySqlConnection conexao = new MySqlConnection(data_source))
@@ -54,6 +61,9 @@ namespace APP
 
                 conexao.Open();
                 MySqlDataReader reader = comando.ExecuteReader();
+
+
+
 
                 while (reader.Read())
                 {
@@ -108,7 +118,7 @@ namespace APP
                         Location = new System.Drawing.Point(281, 73),
                     };
 
-                    System.Windows.Forms.Button btnInfo = new System.Windows.Forms.Button()
+                    System.Windows.Forms.Button btnnewInfo = new System.Windows.Forms.Button()
                     {
                         BackColor = SystemColors.ControlDark,
                         Size = new Size(75, 27),
@@ -119,7 +129,7 @@ namespace APP
                     pedidoPanel.Controls.Add(txtPedido2);
                     pedidoPanel.Controls.Add(btnAceitar);
                     pedidoPanel.Controls.Add(btnRejeitar);
-                    pedidoPanel.Controls.Add(btnInfo);
+                    pedidoPanel.Controls.Add(btnnewInfo);
                     flpanelPedidosNovos.Controls.Add(pedidoPanel);
                 }
 
@@ -131,9 +141,11 @@ namespace APP
             // Force the form to redraw its background
             this.Invalidate();
         }
+        private void btnnewInfo_Click(object sender, EventArgs e)
+        {
 
-        
-        
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             frmFormulario f2 = new frmFormulario(this); // 'this' é a referência do Form1
