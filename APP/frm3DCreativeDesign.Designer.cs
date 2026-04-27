@@ -134,7 +134,7 @@
             butaoRecarregar.InitialImage = Properties.Resources.settings_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
             butaoRecarregar.Name = "butaoRecarregar";
             butaoRecarregar.TabStop = false;
-            butaoRecarregar.Click += butaoTeste_Click;
+            butaoRecarregar.Click += butaoRecarregar_Click;
             // 
             // panelLeft
             // 

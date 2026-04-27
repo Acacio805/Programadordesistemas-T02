@@ -41,3 +41,4 @@ C:\Users\acacio.sribeiro1\source\repos\APP\bin\Debug\net8.0-windows\runtimes\win
 C:\Users\acacio.sribeiro1\source\repos\APP\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.csproj.AssemblyReference.cache
 C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.csproj.Up2Date
+C:\Users\acacio.sribeiro1\source\repos\APP\obj\Debug\net8.0-windows\APP.frmInfo.resources
