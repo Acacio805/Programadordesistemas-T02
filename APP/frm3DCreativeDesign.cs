@@ -1,4 +1,3 @@
-using Microsoft.Office.Interop.Excel;
 // Acessando o pacote do mysql
 using MySql.Data.MySqlClient;
 using Mysqlx.Resultset;
@@ -37,27 +36,37 @@ namespace APP
             public string Email { get; set; }
             public string Tipo { get; set; }
             public string descricao { get; set; }
+            public string nome { get; set; }
+            public int status { get; set; }
         }
 
         public void regarregarPedidos()
         {
+            
             flpanelPedidosNovos.Controls.Clear();
-
+            flpanelPedidosNovos.Size = new Size(386, 73);
             System.Windows.Forms.Label lblPedidosNovos = new System.Windows.Forms.Label()
             {
                 Text = "Pedidos Novos",
+                Font = new Font("Segoe UI", 15),
+                Padding = new System.Windows.Forms.Padding(0, 0, 0, 0),
+                Size = new Size(282, 30)
             };
 
             flpanelPedidosNovos.Controls.Add(lblPedidosNovos);
 
-            List<Pedido> Comissao = new List<Pedido>();
+            List<Pedido> listaPedidos = new List<Pedido>();
 
             using (MySqlConnection conexao = new MySqlConnection(data_source))
             {
 
                 try
                 {
-                    string sql = "SELECT id_comissao, id_cliente, contato, descricao FROM formulario";
+                    string sql = "SELECT formulario.id_comissao, formulario.id_cliente, formulario.contato, formulario.descricao, cliente.nome_cliente , formulario.status " +
+                                 "FROM formulario " +
+                                 "INNER JOIN cliente " +
+                                 "ON formulario.id_comissao = cliente.id_cliente";
+
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
 
                     conexao.Open();
@@ -70,7 +79,9 @@ namespace APP
                         p.Id_Cliente = reader.GetInt32(1);
                         p.Email = reader.GetString(2);
                         p.descricao = reader.GetString(3);
-                        Comissao.Add(p);
+                        p.nome = reader.GetString(4);
+                        p.status = reader.GetInt32(5);
+                        listaPedidos.Add(p);
                     }
                 }
                 catch (MySqlException ex)
@@ -94,26 +105,27 @@ namespace APP
                     }
                 }
 
-                foreach (Pedido p in Comissao)
+                foreach (Pedido p in listaPedidos)
                 {
                     int id = p.Id;
                     RoundedPanel pedidoPanel = new RoundedPanel()
                     {         
-                        Size = new Size(361, 111),
+                        Size = new Size(361, 138),
                         BackColor = Color.White,
                         BorderStyle = BorderStyle.None
                     };
                     pedidoPanel.Tag = id;
 
-                    System.Windows.Forms.TextBox txtPedido1 = new System.Windows.Forms.TextBox()
+                    System.Windows.Forms.TextBox txtNome = new System.Windows.Forms.TextBox()
                     {
                         BackColor = SystemColors.Control,
                         Size = new Size(353, 23),
-                        Location = new System.Drawing.Point(3, 12),
+                        Location = new System.Drawing.Point(3, 12),               
                         ReadOnly = true,
+                        Text = Convert.ToString(p.nome)
                     };
 
-                    System.Windows.Forms.TextBox txtPedido2 = new System.Windows.Forms.TextBox()
+                    System.Windows.Forms.TextBox txtEmail = new System.Windows.Forms.TextBox()
                     {
                         BackColor = SystemColors.Control,
                         Size = new Size(353, 23),   
@@ -121,51 +133,64 @@ namespace APP
                         ReadOnly = true,
                         Text = Convert.ToString(p.Email)
                     };
+                    System.Windows.Forms.TextBox txtDesc = new System.Windows.Forms.TextBox()
+                    {
+                        BackColor = SystemColors.Control,
+                        Size = new Size(353, 23),
+                        Location = new System.Drawing.Point(3, 70),
+                        ReadOnly = true,
+                        Text = Convert.ToString(p.descricao)
+                    };
 
                     System.Windows.Forms.Button btnAceitar = new System.Windows.Forms.Button()
                     {
                         BackColor = Color.DarkGreen,
                         Size = new Size(75, 27),
-                        Location = new System.Drawing.Point(119, 73),
+                        Location = new System.Drawing.Point(119, 104),
                     };
                     btnAceitar.Click += new EventHandler(btnAceitar_Click);
+                    
+                    System.Windows.Forms.Button btnInfo = new System.Windows.Forms.Button()
+                    {
+                        BackColor = SystemColors.ControlDark,
+                        Size = new Size(75, 27),
+                        Location = new System.Drawing.Point(200, 104),                        
+                    };
+                    btnInfo.Tag = id;
 
                     System.Windows.Forms.Button btnDeletar = new System.Windows.Forms.Button()
                     {
                         BackColor = Color.DarkRed,
                         Size = new Size(75, 27),
-                        Location = new System.Drawing.Point(281, 73),
+                        Location = new System.Drawing.Point(281, 104),
                     };
                     btnDeletar.Tag = id;
                     
                     btnDeletar.Click += new EventHandler(btnDeletar_Click);
 
-                    System.Windows.Forms.Button btnInfo = new System.Windows.Forms.Button()
-                    {
-                        BackColor = SystemColors.ControlDark,
-                        Size = new Size(75, 27),
-                        Location = new System.Drawing.Point(200, 73),                        
-                    };
-                    btnInfo.Tag = id;
+
 
                     btnInfo.Click += new EventHandler(btnInfo_Click);
 
-                    pedidoPanel.Controls.Add(txtPedido1);
-                    pedidoPanel.Controls.Add(txtPedido2);
+                    pedidoPanel.Controls.Add(txtNome);
+                    pedidoPanel.Controls.Add(txtEmail);
+                    pedidoPanel.Controls.Add(txtDesc);      
                     pedidoPanel.Controls.Add(btnAceitar);
                     pedidoPanel.Controls.Add(btnDeletar);
                     pedidoPanel.Controls.Add(btnInfo);
                     flpanelPedidosNovos.Controls.Add(pedidoPanel);
+
+                    flpanelPedidosNovos.Size = new Size(flpanelPedidosNovos.Width, flpanelPedidosNovos.Height + 138);
                 }
             }
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
         {
-            Control controle = (Control)sender;
-            string btnDeletar = controle.Name;
-            string btnDeletar_n = Regex.Replace(btnDeletar, @"\D", "");
-            int id = int.Parse(btnDeletar_n);
+            if (sender is not System.Windows.Forms.Button botao || botao.Tag == null)
+                return;
+
+            int id = (int)botao.Tag;
 
             DialogResult resposta = MessageBox.Show(
             "Tem certeza que deseja excluir esse pedido?",
@@ -268,8 +293,7 @@ namespace APP
 
         private void btnDetalhes_Click(object sender, EventArgs e)
         {
-            frmPedido novoForm = new frmPedido();
-            novoForm.Show();
+
         }
 
         private void panelPedido_Paint(object sender, PaintEventArgs e)

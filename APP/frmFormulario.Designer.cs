@@ -40,8 +40,8 @@
             label5 = new Label();
             dtpDataEntrega = new DateTimePicker();
             label6 = new Label();
-            rbtnModeloJogo = new RadioButton();
             panelBackground = new GPanel.GradientPanel();
+            cbModeloJogo = new ComboBox();
             gradientPanel1 = new GPanel.GradientPanel();
             label7 = new Label();
             panelBackground.SuspendLayout();
@@ -161,7 +161,7 @@
             dtpDataEntrega.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dtpDataEntrega.Location = new Point(212, 387);
             dtpDataEntrega.Name = "dtpDataEntrega";
-            dtpDataEntrega.Size = new Size(391, 35);
+            dtpDataEntrega.Size = new Size(403, 35);
             dtpDataEntrega.TabIndex = 10;
             // 
             // label6
@@ -172,22 +172,9 @@
             label6.ForeColor = SystemColors.WindowText;
             label6.Location = new Point(12, 444);
             label6.Name = "label6";
-            label6.Size = new Size(181, 30);
+            label6.Size = new Size(203, 30);
             label6.TabIndex = 11;
-            label6.Text = "Modelo para Jogo";
-            // 
-            // rbtnModeloJogo
-            // 
-            rbtnModeloJogo.AutoSize = true;
-            rbtnModeloJogo.BackColor = Color.Transparent;
-            rbtnModeloJogo.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rbtnModeloJogo.Location = new Point(212, 444);
-            rbtnModeloJogo.Name = "rbtnModeloJogo";
-            rbtnModeloJogo.Size = new Size(37, 34);
-            rbtnModeloJogo.TabIndex = 12;
-            rbtnModeloJogo.TabStop = true;
-            rbtnModeloJogo.Text = " ";
-            rbtnModeloJogo.UseVisualStyleBackColor = false;
+            label6.Text = "Modelo é para Jogo:";
             // 
             // panelBackground
             // 
@@ -195,8 +182,8 @@
             panelBackground.Angle = 45F;
             panelBackground.BackColor = Color.White;
             panelBackground.BottomColor = SystemColors.AppWorkspace;
+            panelBackground.Controls.Add(cbModeloJogo);
             panelBackground.Controls.Add(gradientPanel1);
-            panelBackground.Controls.Add(rbtnModeloJogo);
             panelBackground.Controls.Add(label6);
             panelBackground.Controls.Add(dtpDataEntrega);
             panelBackground.Controls.Add(label5);
@@ -216,6 +203,16 @@
             panelBackground.Size = new Size(984, 761);
             panelBackground.TabIndex = 1;
             panelBackground.TopColor = SystemColors.ControlLight;
+            // 
+            // cbModeloJogo
+            // 
+            cbModeloJogo.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbModeloJogo.FormattingEnabled = true;
+            cbModeloJogo.Items.AddRange(new object[] { "Sim", "Não" });
+            cbModeloJogo.Location = new Point(212, 441);
+            cbModeloJogo.Name = "cbModeloJogo";
+            cbModeloJogo.Size = new Size(149, 38);
+            cbModeloJogo.TabIndex = 27;
             // 
             // gradientPanel1
             // 
@@ -275,9 +272,9 @@
         private Label label5;
         private DateTimePicker dtpDataEntrega;
         private Label label6;
-        private RadioButton rbtnModeloJogo;
         private GPanel.GradientPanel panelBackground;
         private GPanel.GradientPanel gradientPanel1;
         private Label label7;
+        private ComboBox cbModeloJogo;
     }
 }

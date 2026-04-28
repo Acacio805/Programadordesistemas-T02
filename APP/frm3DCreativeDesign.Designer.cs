@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm3DCreativeDesign));
             panelPedido = new Panel();
+            textBox1 = new TextBox();
             button2 = new Button();
             button1 = new Button();
             txtNome = new TextBox();
@@ -46,6 +47,8 @@
             pictureBox2 = new PictureBox();
             panelBackground = new GPanel.GradientPanel();
             flpanelPedidosNovos = new Rflp.RoundedFlowLayoutPanel();
+            roundedFlowLayoutPanel2 = new Rflp.RoundedFlowLayoutPanel();
+            label2 = new Label();
             gradientPanel1 = new GPanel.GradientPanel();
             btnPesquisar = new PictureBox();
             txtPesquisar = new Rtxt.RoundedTextBox();
@@ -61,6 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panelBackground.SuspendLayout();
             flpanelPedidosNovos.SuspendLayout();
+            roundedFlowLayoutPanel2.SuspendLayout();
             gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnPesquisar).BeginInit();
             roundedFlowLayoutPanel1.SuspendLayout();
@@ -70,6 +74,7 @@
             // 
             resources.ApplyResources(panelPedido, "panelPedido");
             panelPedido.BackColor = Color.White;
+            panelPedido.Controls.Add(textBox1);
             panelPedido.Controls.Add(button2);
             panelPedido.Controls.Add(button1);
             panelPedido.Controls.Add(txtNome);
@@ -77,6 +82,12 @@
             panelPedido.Controls.Add(btnDetalhes);
             panelPedido.Name = "panelPedido";
             panelPedido.Paint += panelPedido_Paint;
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(textBox1, "textBox1");
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
             // 
             // button2
             // 
@@ -216,6 +227,7 @@
             panelBackground.BackColor = Color.White;
             panelBackground.BottomColor = Color.Purple;
             panelBackground.Controls.Add(flpanelPedidosNovos);
+            panelBackground.Controls.Add(roundedFlowLayoutPanel2);
             panelBackground.Controls.Add(panelPedido);
             panelBackground.Controls.Add(gradientPanel1);
             panelBackground.Controls.Add(roundedFlowLayoutPanel1);
@@ -230,6 +242,19 @@
             flpanelPedidosNovos.BorderRadius = 20;
             flpanelPedidosNovos.Controls.Add(labelPedidos);
             flpanelPedidosNovos.Name = "flpanelPedidosNovos";
+            // 
+            // roundedFlowLayoutPanel2
+            // 
+            resources.ApplyResources(roundedFlowLayoutPanel2, "roundedFlowLayoutPanel2");
+            roundedFlowLayoutPanel2.BackColor = SystemColors.Control;
+            roundedFlowLayoutPanel2.BorderRadius = 20;
+            roundedFlowLayoutPanel2.Controls.Add(label2);
+            roundedFlowLayoutPanel2.Name = "roundedFlowLayoutPanel2";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(label2, "label2");
+            label2.Name = "label2";
             // 
             // gradientPanel1
             // 
@@ -292,6 +317,8 @@
             panelBackground.ResumeLayout(false);
             flpanelPedidosNovos.ResumeLayout(false);
             flpanelPedidosNovos.PerformLayout();
+            roundedFlowLayoutPanel2.ResumeLayout(false);
+            roundedFlowLayoutPanel2.PerformLayout();
             gradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnPesquisar).EndInit();
             roundedFlowLayoutPanel1.ResumeLayout(false);
@@ -323,5 +350,8 @@
         private PictureBox btnPesquisar;
         private Rflp.RoundedFlowLayoutPanel flpanelPedidosNovos;
         private Rflp.RoundedFlowLayoutPanel roundedFlowLayoutPanel1;
+        private TextBox textBox1;
+        private Rflp.RoundedFlowLayoutPanel roundedFlowLayoutPanel2;
+        private Label label2;
     }
 }

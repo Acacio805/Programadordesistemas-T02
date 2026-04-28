@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,14 +20,15 @@ namespace APP
 
         private frm3DCreativeDesign _form1; // Variável para guardar a referência
 
+        public int id;
+
         public frmInfo(frm3DCreativeDesign f1)
         {
             InitializeComponent();
             _form1 = f1;
-            int Id_pedido = _form1.Id_Pedido ;
-            CarregarPedido(Id_pedido);
+            id = _form1.Id_Pedido;
+            CarregarPedido(id);
         }
-
 
         private void CarregarPedido(int id)
         {
@@ -34,10 +36,10 @@ namespace APP
             {
                 try
                 {
-                    string sql = $"SELECT formulario.contato, formulario.descricao, cliente.nome_cliente, formulario.tipo_modelo, formulario.deadline  " +
-                             $"FROM formulario " +
-                             $"INNER JOIN cliente ON formulario.id_comissao = cliente.id_cliente " +
-                             $"WHERE formulario.id_comissao = @id";
+                    string sql = $"SELECT formulario.contato, formulario.descricao, cliente.nome_cliente, formulario.tipo_modelo, formulario.deadline, formulario.modelo_jogo " +
+                                 $"FROM formulario " +
+                                 $"INNER JOIN cliente ON formulario.id_comissao = cliente.id_cliente " +
+                                 $"WHERE formulario.id_comissao = @id";
 
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
 
@@ -68,14 +70,22 @@ namespace APP
                             default:
                                 break;
                         }
-                        string dataTexto = reader.GetString(4);
-                        
-                       // DateTime data = DateTime.ParseExact(dataTexto, "dd/MM/YYYY");
-                       // dtpDataEntrega.Value = data;
 
+                        DateTime data = reader.GetDateTime(4);
+                        dtpDataEntrega.Value = data;
+
+                        byte modelo_jogo = reader.GetByte(5);
+                        if (modelo_jogo == 1)
+                        {
+                            cbModeloJogo.Text = "Sim";
+                        }
+                        else
+                        {
+                            cbModeloJogo.Text = "Não";
                         }
                     }
-                
+                }
+
 
                 catch (MySqlException ex)
                 {
@@ -98,7 +108,83 @@ namespace APP
                     }
                 }
             }
+
+        }
+
+        private void AtualizarPedido()
+        {
+            using (MySqlConnection conexao = new MySqlConnection(data_source))
+            {
+                conexao.Open();
+                try
+                {
+                    string sql = $"UPDATE formulario " +
+                                 $"INNER JOIN cliente " +
+                                 $" ON formulario.id_comissao = cliente.id_cliente " +
+                                 $"SET " +
+                                 $"formulario.contato = @contato, " +
+                                 $"formulario.descricao = @descricao, " +
+                                 $"cliente.nome_cliente = @nome, " +
+                                 $"formulario.tipo_modelo = @tipo_modelo, " +
+                                 $"formulario.deadline = @deadline, " +
+                                 $"formulario.modelo_jogo = @modelo_jogo " +    
+                                 $"WHERE formulario.id_comissao = @id";
+
+                    MySqlCommand comando = new MySqlCommand(sql, conexao);
                     
+                    comando.Parameters.AddWithValue("id", id);
+                    
+                    comando.Parameters.AddWithValue("contato", txtEmail.Text.Trim());
+                    comando.Parameters.AddWithValue("nome", txtNome.Text.Trim());
+                    comando.Parameters.AddWithValue("descricao", txtDescricao.Text.Trim());
+
+                    comando.Parameters.AddWithValue("tipo_modelo", cbTipodeModelo.Text.Trim());
+
+                    byte modeloJogo = cbModeloJogo.Text.Trim().Equals("Sim")
+                        ? (byte)1
+                        : (byte)0;
+                    comando.Parameters.AddWithValue("modelo_jogo", modeloJogo);
+
+                    DateTime data = dtpDataEntrega.Value;
+                    comando.Parameters.AddWithValue("deadline", data);
+
+                    comando.ExecuteNonQuery();
+
+                    // Mensagem de sucesso
+                    MessageBox.Show($"Os dados do pedido foram alterados com Sucesso.",
+                                    "Sucesso",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
+                    _form1.regarregarPedidos();
+                }
+                catch (MySqlException ex)
+                {
+                    //Trata erros relacionados ao MySQL
+                    MessageBox.Show("Erro " + ex.Number + " Ocorreu: " + ex.Message,
+                                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    //Trata outros tipos de erro
+                    MessageBox.Show("Ocorreu: " + ex.Message,
+                                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    //Garante que a conexão com o banco será fechada, mesmo se ocorrer erro
+                    if (conexao != null && conexao.State == ConnectionState.Open)
+                    {
+                        conexao.Close();
+                    }
+                    
+                }
+            }
+
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            AtualizarPedido();
         }
     }
 }       

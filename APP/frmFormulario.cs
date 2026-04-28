@@ -84,9 +84,9 @@ namespace APP
 
                         cmd.CommandText = @"
                             INSERT INTO formulario
-                            (contato, deadline, descricao, modelo_jogo, tipo_modelo, id_cliente)
+                            (contato, deadline, descricao, modelo_jogo, tipo_modelo, id_cliente, status)
                             VALUES
-                            (@contato, @deadline, @descricao, @modelo_jogo, @tipo_modelo, @id_cliente)
+                            (@contato, @deadline, @descricao, @modelo_jogo, @tipo_modelo, @id_cliente, 0)   
                         ";
 
                         cmd.Parameters.AddWithValue(
@@ -101,7 +101,7 @@ namespace APP
                             "@descricao", txtDescricao.Text.Trim()
                         );
 
-                        byte modeloJogo = rbtnModeloJogo.Checked
+                        byte modeloJogo = cbModeloJogo.Text.Trim().Equals("Sim")
                             ? (byte)1
                             : (byte)0;
 
