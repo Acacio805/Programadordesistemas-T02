@@ -44,7 +44,9 @@ namespace APP
         {
             
             flpanelPedidosNovos.Controls.Clear();
-            flpanelPedidosNovos.Size = new Size(386, 73);
+            flpanelPedidosAndamento.Controls.Clear();
+
+            
             System.Windows.Forms.Label lblPedidosNovos = new System.Windows.Forms.Label()
             {
                 Text = "Pedidos Novos",
@@ -52,8 +54,19 @@ namespace APP
                 Padding = new System.Windows.Forms.Padding(0, 0, 0, 0),
                 Size = new Size(282, 30)
             };
+            System.Windows.Forms.Label lblPedidosAndamento = new System.Windows.Forms.Label()
+            {
+                Text = "Pedidos em Andamento",
+                Font = new Font("Segoe UI", 15),
+                Padding = new System.Windows.Forms.Padding(0, 0, 0, 0),
+                Size = new Size(282, 30)
+            };
 
             flpanelPedidosNovos.Controls.Add(lblPedidosNovos);
+            flpanelPedidosAndamento.Controls.Add(lblPedidosAndamento);
+
+            flpanelPedidosNovos.Size = new Size(386, 46);
+            flpanelPedidosAndamento.Size = new Size(386, 46);
 
             List<Pedido> listaPedidos = new List<Pedido>();
 
@@ -108,85 +121,166 @@ namespace APP
                 foreach (Pedido p in listaPedidos)
                 {
                     int id = p.Id;
-                    RoundedPanel pedidoPanel = new RoundedPanel()
-                    {         
-                        Size = new Size(361, 138),
-                        BackColor = Color.White,
-                        BorderStyle = BorderStyle.None
-                    };
-                    pedidoPanel.Tag = id;
-
-                    System.Windows.Forms.TextBox txtNome = new System.Windows.Forms.TextBox()
+                    if (p.status == 0)
                     {
-                        BackColor = SystemColors.Control,
-                        Size = new Size(353, 23),
-                        Location = new System.Drawing.Point(3, 12),               
-                        ReadOnly = true,
-                        Text = Convert.ToString(p.nome)
-                    };
+                        RoundedPanel pedidoPanel = new RoundedPanel()
+                        {
+                            Size = new Size(361, 138),
+                            BackColor = Color.White,
+                            BorderStyle = BorderStyle.None
+                        };
+                        pedidoPanel.Tag = id;
 
-                    System.Windows.Forms.TextBox txtEmail = new System.Windows.Forms.TextBox()
+                        System.Windows.Forms.TextBox txtNome = new System.Windows.Forms.TextBox()
+                        {
+                            BackColor = SystemColors.Control,
+                            Size = new Size(353, 23),
+                            Location = new System.Drawing.Point(3, 12),
+                            ReadOnly = true,
+                            Text = Convert.ToString(p.nome)
+                        };
+
+                        System.Windows.Forms.TextBox txtEmail = new System.Windows.Forms.TextBox()
+                        {
+                            BackColor = SystemColors.Control,
+                            Size = new Size(353, 23),
+                            Location = new System.Drawing.Point(3, 41),
+                            ReadOnly = true,
+                            Text = Convert.ToString(p.Email)
+                        };
+                        System.Windows.Forms.TextBox txtDesc = new System.Windows.Forms.TextBox()
+                        {
+                            BackColor = SystemColors.Control,
+                            Size = new Size(353, 23),
+                            Location = new System.Drawing.Point(3, 70),
+                            ReadOnly = true,
+                            Text = Convert.ToString(p.descricao)
+                        };
+
+                        System.Windows.Forms.Button btnAceitar = new System.Windows.Forms.Button()
+                        {
+                            BackColor = Color.DarkGreen,
+                            Size = new Size(75, 27),
+                            Location = new System.Drawing.Point(119, 104),
+                        };
+
+                        System.Windows.Forms.Button btnInfo = new System.Windows.Forms.Button()
+                        {
+                            BackColor = SystemColors.ControlDark,
+                            Size = new Size(75, 27),
+                            Location = new System.Drawing.Point(200, 104),
+                        };                       
+
+                        System.Windows.Forms.Button btnDeletar = new System.Windows.Forms.Button()
+                        {
+                            BackColor = Color.DarkRed,
+                            Size = new Size(75, 27),
+                            Location = new System.Drawing.Point(281, 104),
+                        };
+
+                        btnAceitar.Tag = id;
+                        btnAceitar.Click += new EventHandler(btnAceitar_Click);
+
+                        btnDeletar.Click += new EventHandler(btnDeletar_Click);
+                        btnDeletar.Tag = id;
+
+                        btnInfo.Click += new EventHandler(btnInfo_Click);
+                        btnInfo.Tag = id;
+
+                        pedidoPanel.Controls.Add(txtNome);
+                        pedidoPanel.Controls.Add(txtEmail);
+                        pedidoPanel.Controls.Add(txtDesc);
+                        pedidoPanel.Controls.Add(btnAceitar);
+                        pedidoPanel.Controls.Add(btnDeletar);
+                        pedidoPanel.Controls.Add(btnInfo);
+                        flpanelPedidosNovos.Controls.Add(pedidoPanel);
+
+                        flpanelPedidosNovos.Size = new Size(flpanelPedidosNovos.Width, flpanelPedidosNovos.Height + 138);
+                    }
+
+                    if (p.status == 1)
                     {
-                        BackColor = SystemColors.Control,
-                        Size = new Size(353, 23),   
-                        Location = new System.Drawing.Point(3, 41),
-                        ReadOnly = true,
-                        Text = Convert.ToString(p.Email)
-                    };
-                    System.Windows.Forms.TextBox txtDesc = new System.Windows.Forms.TextBox()
-                    {
-                        BackColor = SystemColors.Control,
-                        Size = new Size(353, 23),
-                        Location = new System.Drawing.Point(3, 70),
-                        ReadOnly = true,
-                        Text = Convert.ToString(p.descricao)
-                    };
+                        RoundedPanel pedidoPanel = new RoundedPanel()
+                        {
+                            Size = new Size(361, 138),
+                            BackColor = Color.White,
+                            BorderStyle = BorderStyle.None
+                        };
+                        pedidoPanel.Tag = id;
 
-                    System.Windows.Forms.Button btnAceitar = new System.Windows.Forms.Button()
-                    {
-                        BackColor = Color.DarkGreen,
-                        Size = new Size(75, 27),
-                        Location = new System.Drawing.Point(119, 104),
-                    };
-                    btnAceitar.Click += new EventHandler(btnAceitar_Click);
-                    
-                    System.Windows.Forms.Button btnInfo = new System.Windows.Forms.Button()
-                    {
-                        BackColor = SystemColors.ControlDark,
-                        Size = new Size(75, 27),
-                        Location = new System.Drawing.Point(200, 104),                        
-                    };
-                    btnInfo.Tag = id;
+                        System.Windows.Forms.TextBox txtNome = new System.Windows.Forms.TextBox()
+                        {
+                            BackColor = SystemColors.Control,
+                            Size = new Size(353, 23),
+                            Location = new System.Drawing.Point(3, 12),
+                            ReadOnly = true,
+                            Text = Convert.ToString(p.nome)
+                        };
 
-                    System.Windows.Forms.Button btnDeletar = new System.Windows.Forms.Button()
-                    {
-                        BackColor = Color.DarkRed,
-                        Size = new Size(75, 27),
-                        Location = new System.Drawing.Point(281, 104),
-                    };
-                    btnDeletar.Tag = id;
-                    
-                    btnDeletar.Click += new EventHandler(btnDeletar_Click);
+                        System.Windows.Forms.TextBox txtEmail = new System.Windows.Forms.TextBox()
+                        {
+                            BackColor = SystemColors.Control,
+                            Size = new Size(353, 23),
+                            Location = new System.Drawing.Point(3, 41),
+                            ReadOnly = true,
+                            Text = Convert.ToString(p.Email)
+                        };
+                        System.Windows.Forms.TextBox txtDesc = new System.Windows.Forms.TextBox()
+                        {
+                            BackColor = SystemColors.Control,
+                            Size = new Size(353, 23),
+                            Location = new System.Drawing.Point(3, 70),
+                            ReadOnly = true,
+                            Text = Convert.ToString(p.descricao)
+                        };
 
+                        System.Windows.Forms.Button btnAceitar = new System.Windows.Forms.Button()
+                        {
+                            BackColor = Color.DarkGreen,
+                            Size = new Size(75, 27),
+                            Location = new System.Drawing.Point(119, 104),
+                        };                                               
 
+                        System.Windows.Forms.Button btnInfo = new System.Windows.Forms.Button()
+                        {
+                            BackColor = SystemColors.ControlDark,
+                            Size = new Size(75, 27),
+                            Location = new System.Drawing.Point(200, 104),
+                        };
 
-                    btnInfo.Click += new EventHandler(btnInfo_Click);
+                        System.Windows.Forms.Button btnDeletar = new System.Windows.Forms.Button()
+                        {
+                            BackColor = Color.DarkRed,
+                            Size = new Size(75, 27),
+                            Location = new System.Drawing.Point(281, 104),
+                        };
+                        
+                        btnAceitar.Tag = id;
+                        btnAceitar.Click += new EventHandler(btnAceitar_Click);
 
-                    pedidoPanel.Controls.Add(txtNome);
-                    pedidoPanel.Controls.Add(txtEmail);
-                    pedidoPanel.Controls.Add(txtDesc);      
-                    pedidoPanel.Controls.Add(btnAceitar);
-                    pedidoPanel.Controls.Add(btnDeletar);
-                    pedidoPanel.Controls.Add(btnInfo);
-                    flpanelPedidosNovos.Controls.Add(pedidoPanel);
+                        btnDeletar.Tag = id;
+                        btnDeletar.Click += new EventHandler(btnDeletar_Click);
 
-                    flpanelPedidosNovos.Size = new Size(flpanelPedidosNovos.Width, flpanelPedidosNovos.Height + 138);
+                        btnInfo.Tag = id;
+                        btnInfo.Click += new EventHandler(btnInfo_Click);
+
+                        pedidoPanel.Controls.Add(txtNome);
+                        pedidoPanel.Controls.Add(txtEmail);
+                        pedidoPanel.Controls.Add(txtDesc);
+                        pedidoPanel.Controls.Add(btnAceitar);
+                        pedidoPanel.Controls.Add(btnDeletar);
+                        pedidoPanel.Controls.Add(btnInfo);
+                        flpanelPedidosAndamento.Controls.Add(pedidoPanel);
+
+                        flpanelPedidosAndamento.Size = new Size(flpanelPedidosAndamento.Width, flpanelPedidosAndamento.Height + 138);
+                    }
                 }
             }
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
         {
+            
             if (sender is not System.Windows.Forms.Button botao || botao.Tag == null)
                 return;
 
@@ -250,17 +344,58 @@ namespace APP
                             regarregarPedidos();
                         }
                     }
-                    }
-
-
+                }
             }
         }
         private void btnAceitar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("pedido aceito");
-        }
 
-        
+            if (sender is not System.Windows.Forms.Button botao || botao.Tag == null)
+                return;
+
+            int id = (int)botao.Tag;
+
+            MessageBox.Show("pedido aceito");
+
+            using (MySqlConnection conexao = new MySqlConnection(data_source))
+            {
+                conexao.Open();
+
+                try
+                {
+                    string sql = $"UPDATE formulario " +
+                                 $"SET formulario.status = 1 " +
+                                 $"WHERE formulario.id_comissao = @id";
+
+                    MySqlCommand cmd = new MySqlCommand(sql, conexao);
+                    cmd.Parameters.AddWithValue("id", id);
+
+                    cmd.ExecuteNonQuery();
+                }
+                catch (MySqlException ex)
+                {
+                    //Trata erros relacionados ao MySQL
+                    MessageBox.Show("Erro " + ex.Number + " Ocorreu: " + ex.Message,
+                                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    //Trata outros tipos de erro
+                    MessageBox.Show("Ocorreu: " + ex.Message,
+                                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    //Garante que a conexão com o banco será fechada, mesmo se ocorrer erro
+                    if (conexao != null && conexao.State == ConnectionState.Open)
+                    {
+                        conexao.Close();
+                    }
+                    regarregarPedidos();
+                }
+            }
+        }
+   
         private void btnInfo_Click(object sender, EventArgs e)
         {
             if (sender is not System.Windows.Forms.Button botao || botao.Tag == null)

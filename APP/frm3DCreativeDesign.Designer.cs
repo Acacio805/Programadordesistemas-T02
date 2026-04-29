@@ -47,12 +47,12 @@
             pictureBox2 = new PictureBox();
             panelBackground = new GPanel.GradientPanel();
             flpanelPedidosNovos = new Rflp.RoundedFlowLayoutPanel();
-            roundedFlowLayoutPanel2 = new Rflp.RoundedFlowLayoutPanel();
-            label2 = new Label();
+            flpanelPedidosAndamento = new Rflp.RoundedFlowLayoutPanel();
+            labelPedidosAndamento = new Label();
             gradientPanel1 = new GPanel.GradientPanel();
             btnPesquisar = new PictureBox();
             txtPesquisar = new Rtxt.RoundedTextBox();
-            roundedFlowLayoutPanel1 = new Rflp.RoundedFlowLayoutPanel();
+            flpanelPedidosConcluidos = new Rflp.RoundedFlowLayoutPanel();
             label1 = new Label();
             panelPedido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)butaoRecarregar).BeginInit();
@@ -64,10 +64,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panelBackground.SuspendLayout();
             flpanelPedidosNovos.SuspendLayout();
-            roundedFlowLayoutPanel2.SuspendLayout();
+            flpanelPedidosAndamento.SuspendLayout();
             gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnPesquisar).BeginInit();
-            roundedFlowLayoutPanel1.SuspendLayout();
+            flpanelPedidosConcluidos.SuspendLayout();
             SuspendLayout();
             // 
             // panelPedido
@@ -227,10 +227,10 @@
             panelBackground.BackColor = Color.White;
             panelBackground.BottomColor = Color.Purple;
             panelBackground.Controls.Add(flpanelPedidosNovos);
-            panelBackground.Controls.Add(roundedFlowLayoutPanel2);
+            panelBackground.Controls.Add(flpanelPedidosAndamento);
             panelBackground.Controls.Add(panelPedido);
             panelBackground.Controls.Add(gradientPanel1);
-            panelBackground.Controls.Add(roundedFlowLayoutPanel1);
+            panelBackground.Controls.Add(flpanelPedidosConcluidos);
             panelBackground.CornerRadius = 20;
             panelBackground.Name = "panelBackground";
             panelBackground.TopColor = Color.Aqua;
@@ -243,18 +243,18 @@
             flpanelPedidosNovos.Controls.Add(labelPedidos);
             flpanelPedidosNovos.Name = "flpanelPedidosNovos";
             // 
-            // roundedFlowLayoutPanel2
+            // flpanelPedidosAndamento
             // 
-            resources.ApplyResources(roundedFlowLayoutPanel2, "roundedFlowLayoutPanel2");
-            roundedFlowLayoutPanel2.BackColor = SystemColors.Control;
-            roundedFlowLayoutPanel2.BorderRadius = 20;
-            roundedFlowLayoutPanel2.Controls.Add(label2);
-            roundedFlowLayoutPanel2.Name = "roundedFlowLayoutPanel2";
+            resources.ApplyResources(flpanelPedidosAndamento, "flpanelPedidosAndamento");
+            flpanelPedidosAndamento.BackColor = SystemColors.Control;
+            flpanelPedidosAndamento.BorderRadius = 20;
+            flpanelPedidosAndamento.Controls.Add(labelPedidosAndamento);
+            flpanelPedidosAndamento.Name = "flpanelPedidosAndamento";
             // 
-            // label2
+            // labelPedidosAndamento
             // 
-            resources.ApplyResources(label2, "label2");
-            label2.Name = "label2";
+            resources.ApplyResources(labelPedidosAndamento, "labelPedidosAndamento");
+            labelPedidosAndamento.Name = "labelPedidosAndamento";
             // 
             // gradientPanel1
             // 
@@ -284,13 +284,13 @@
             txtPesquisar.BackColor = Color.White;
             txtPesquisar.Name = "txtPesquisar";
             // 
-            // roundedFlowLayoutPanel1
+            // flpanelPedidosConcluidos
             // 
-            resources.ApplyResources(roundedFlowLayoutPanel1, "roundedFlowLayoutPanel1");
-            roundedFlowLayoutPanel1.BackColor = SystemColors.Control;
-            roundedFlowLayoutPanel1.BorderRadius = 20;
-            roundedFlowLayoutPanel1.Controls.Add(label1);
-            roundedFlowLayoutPanel1.Name = "roundedFlowLayoutPanel1";
+            resources.ApplyResources(flpanelPedidosConcluidos, "flpanelPedidosConcluidos");
+            flpanelPedidosConcluidos.BackColor = SystemColors.Control;
+            flpanelPedidosConcluidos.BorderRadius = 20;
+            flpanelPedidosConcluidos.Controls.Add(label1);
+            flpanelPedidosConcluidos.Name = "flpanelPedidosConcluidos";
             // 
             // label1
             // 
@@ -317,12 +317,12 @@
             panelBackground.ResumeLayout(false);
             flpanelPedidosNovos.ResumeLayout(false);
             flpanelPedidosNovos.PerformLayout();
-            roundedFlowLayoutPanel2.ResumeLayout(false);
-            roundedFlowLayoutPanel2.PerformLayout();
+            flpanelPedidosAndamento.ResumeLayout(false);
+            flpanelPedidosAndamento.PerformLayout();
             gradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnPesquisar).EndInit();
-            roundedFlowLayoutPanel1.ResumeLayout(false);
-            roundedFlowLayoutPanel1.PerformLayout();
+            flpanelPedidosConcluidos.ResumeLayout(false);
+            flpanelPedidosConcluidos.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -349,9 +349,9 @@
         private Rtxt.RoundedTextBox txtPesquisar;
         private PictureBox btnPesquisar;
         private Rflp.RoundedFlowLayoutPanel flpanelPedidosNovos;
-        private Rflp.RoundedFlowLayoutPanel roundedFlowLayoutPanel1;
+        private Rflp.RoundedFlowLayoutPanel flpanelPedidosConcluidos;
         private TextBox textBox1;
-        private Rflp.RoundedFlowLayoutPanel roundedFlowLayoutPanel2;
-        private Label label2;
+        private Rflp.RoundedFlowLayoutPanel flpanelPedidosAndamento;
+        private Label labelPedidosAndamento;
     }
 }
