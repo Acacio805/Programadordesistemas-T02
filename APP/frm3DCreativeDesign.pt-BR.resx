@@ -117,68 +117,110 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 106</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 25</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Atrasado 26/04</value>
+  </data>
+  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 70</value>
+  </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>353, 23</value>
+    <value>341, 26</value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>bla bla bla</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>281, 104</value>
+    <value>301, 104</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 27</value>
+    <value>51, 27</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
+  </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 104</value>
+    <value>187, 104</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 27</value>
+    <value>51, 27</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
+  <data name="txtNome.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
   <data name="txtNome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 12</value>
+    <value>11, 12</value>
   </data>
   <data name="txtNome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>353, 23</value>
+    <value>341, 26</value>
+  </data>
+  <data name="txtTipo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
   </data>
   <data name="txtTipo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 41</value>
+    <value>11, 41</value>
   </data>
   <data name="txtTipo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>353, 23</value>
+    <value>341, 26</value>
   </data>
-  <data name="btnDetalhes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnDetalhes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 104</value>
+  <data name="btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 104</value>
   </data>
-  <data name="btnDetalhes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 27</value>
+  <data name="btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 27</value>
   </data>
-  <data name="panelPedido.Location" type="System.Drawing.Point, System.Drawing">
-    <value>533, 76</value>
+  <data name="panelP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>549, 377</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelPedido.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="panelP.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>8, 8, 8, 8</value>
   </data>
-  <data name="panelPedido.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="panelP.Size" type="System.Drawing.Size, System.Drawing">
     <value>361, 138</value>
   </data>
-  <data name="panelPedido.Visible" type="System.Boolean, mscorlib">
+  <data name="panelP.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="labelPedidos.AutoSize" type="System.Boolean, mscorlib">
@@ -211,32 +253,11 @@
   <data name="butaoRecarregar.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
   </data>
-  <data name="panelLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="panelLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panelLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 775</value>
-  </data>
-  <data name="flowLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 511</value>
-  </data>
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 261</value>
-  </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
   <data name="btnTrash.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnTrash.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 69</value>
+    <value>7, 361</value>
   </data>
   <data name="btnTrash.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 60</value>
@@ -244,11 +265,14 @@
   <data name="btnTrash.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
   </data>
+  <data name="btnTrash.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="btnSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 135</value>
+    <value>7, 427</value>
   </data>
   <data name="btnSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 60</value>
@@ -256,17 +280,32 @@
   <data name="btnSettings.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
   </data>
+  <data name="btnSettings.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="flowLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
   <data name="btnAdd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnAdd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 201</value>
+    <value>3, 69</value>
   </data>
   <data name="btnAdd.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 60</value>
   </data>
   <data name="btnAdd.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 640</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 132</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="panelLeftWhite.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -286,14 +325,53 @@
   <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="panelBackground.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="panelLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
   </data>
-  <data name="panelBackground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 0</value>
+  <data name="panelLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="panelBackground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1749, 775</value>
+  <data name="panelLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 775</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15.75pt</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 8</value>
+  </data>
+  <data name="label3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 90, 0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 30</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Pedidos Atrasados</value>
+  </data>
+  <data name="flpanelPedidosAtrasados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>549, 76</value>
+  </data>
+  <data name="flpanelPedidosAtrasados.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="flpanelPedidosAtrasados.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="flpanelPedidosAtrasados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 45</value>
+  </data>
+  <data name="flpanelPedidosAtrasados.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="flpanelPedidosNovos.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -313,15 +391,6 @@
   <data name="flpanelPedidosNovos.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="flpanelPedidosAndamento.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="flpanelPedidosAndamento.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
-  </data>
-  <data name="flpanelPedidosAndamento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>386, 45</value>
-  </data>
   <data name="labelPedidosAndamento.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -340,17 +409,14 @@
   <data name="labelPedidosAndamento.Text" xml:space="preserve">
     <value>Pedidos Em andamento</value>
   </data>
-  <data name="gradientPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="flpanelPedidosAndamento.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="gradientPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="flpanelPedidosAndamento.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
   </data>
-  <data name="gradientPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1749, 50</value>
-  </data>
-  <data name="gradientPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="flpanelPedidosAndamento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 45</value>
   </data>
   <data name="btnPesquisar.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 44</value>
@@ -373,20 +439,17 @@
   <data name="txtPesquisar.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="flpanelPedidosConcluidos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1359, 76</value>
+  <data name="gradientPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="flpanelPedidosConcluidos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="gradientPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="flpanelPedidosConcluidos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
+  <data name="gradientPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1749, 50</value>
   </data>
-  <data name="flpanelPedidosConcluidos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>386, 45</value>
-  </data>
-  <data name="flpanelPedidosConcluidos.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="gradientPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -405,6 +468,30 @@
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Pedidos Concluidos</value>
+  </data>
+  <data name="flpanelPedidosConcluidos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1359, 76</value>
+  </data>
+  <data name="flpanelPedidosConcluidos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="flpanelPedidosConcluidos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="flpanelPedidosConcluidos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 45</value>
+  </data>
+  <data name="flpanelPedidosConcluidos.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="panelBackground.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelBackground.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 0</value>
+  </data>
+  <data name="panelBackground.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1749, 775</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1835, 775</value>

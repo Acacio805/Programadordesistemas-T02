@@ -13,6 +13,9 @@
     <Compile Update="GradientPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="RoundedFlowLayoutPanel.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using Microsoft.Office.Interop.Excel;
+using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
@@ -11,7 +12,7 @@ namespace Rflp
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
             using (GraphicsPath path = new GraphicsPath())
             {
@@ -26,10 +27,10 @@ namespace Rflp
 
                 this.Region = new Region(path); // This clips the content inside the corners
 
-                using (Pen pen = new Pen(Color.Gray, 1.0f)) // Optional: Draw a border
-                {
-                    e.Graphics.DrawPath(pen, path);
-                }
+                //using (Pen pen = new Pen(Color.Gray, 1.0f)) // Optional: Draw a border
+                //{
+                //   e.Graphics.DrawPath(pen, path);
+                //}
             }
         }
     }
