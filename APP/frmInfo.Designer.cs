@@ -124,9 +124,9 @@
             label3.ForeColor = SystemColors.WindowText;
             label3.Location = new Point(19, 193);
             label3.Name = "label3";
-            label3.Size = new Size(74, 30);
+            label3.Size = new Size(98, 30);
             label3.TabIndex = 16;
-            label3.Text = "Email :";
+            label3.Text = "Contato :";
             // 
             // label2
             // 

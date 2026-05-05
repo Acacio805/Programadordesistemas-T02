@@ -17,15 +17,19 @@ namespace Rflp
             using (GraphicsPath path = new GraphicsPath())
             {
                 float radius = BorderRadius;
-                RectangleF rect = new RectangleF(0, 0, this.Width - 1, this.Height - 1);
-
-                path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
-                path.AddArc(rect.Right - radius, rect.Y, radius, radius, 270, 90);
-                path.AddArc(rect.Right - radius, rect.Bottom - radius, radius, radius, 0, 90);
-                path.AddArc(rect.X, rect.Bottom - radius, radius, radius, 90, 90);
+                path.StartFigure();
+                // Top Left
+                path.AddArc(0, 0, radius, radius, 180, 90);
+                // Top Right
+                path.AddArc(Width - radius, 0, radius, radius, 270, 90);
+                // Bottom Right
+                path.AddArc(Width - radius, Height - radius, radius, radius, 0, 90);
+                // Bottom Left
+                path.AddArc(0, Height - radius, radius, radius, 90, 90);
                 path.CloseFigure();
 
-                this.Region = new Region(path); // This clips the content inside the corners
+                // Set the panel's region to this path to clip the background
+                this.Region = new Region(path);
 
                 //using (Pen pen = new Pen(Color.Gray, 1.0f)) // Optional: Draw a border
                 //{

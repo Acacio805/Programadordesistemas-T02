@@ -30,16 +30,16 @@
         {
             txtNome = new TextBox();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            lblDescricao = new Label();
+            lblContato = new Label();
             txtDescricao = new TextBox();
             txtEmail = new TextBox();
-            label4 = new Label();
+            lblTipoModelo = new Label();
             btnAdicionarPedido = new Button();
             cbTipodeModelo = new ComboBox();
-            label5 = new Label();
+            lblDeadline = new Label();
             dtpDataEntrega = new DateTimePicker();
-            label6 = new Label();
+            lblJogo = new Label();
             panelBackground = new GPanel.GradientPanel();
             cbModeloJogo = new ComboBox();
             gradientPanel1 = new GPanel.GradientPanel();
@@ -68,29 +68,29 @@
             label1.TabIndex = 1;
             label1.Text = "Nome :";
             // 
-            // label2
+            // lblDescricao
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.WindowText;
-            label2.Location = new Point(12, 281);
-            label2.Name = "label2";
-            label2.Size = new Size(171, 30);
-            label2.TabIndex = 2;
-            label2.Text = "Descrição Breve :";
+            lblDescricao.AutoSize = true;
+            lblDescricao.BackColor = Color.Transparent;
+            lblDescricao.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblDescricao.ForeColor = SystemColors.WindowText;
+            lblDescricao.Location = new Point(12, 281);
+            lblDescricao.Name = "lblDescricao";
+            lblDescricao.Size = new Size(171, 30);
+            lblDescricao.TabIndex = 2;
+            lblDescricao.Text = "Descrição Breve :";
             // 
-            // label3
+            // lblContato
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.WindowText;
-            label3.Location = new Point(12, 226);
-            label3.Name = "label3";
-            label3.Size = new Size(74, 30);
-            label3.TabIndex = 3;
-            label3.Text = "Email :";
+            lblContato.AutoSize = true;
+            lblContato.BackColor = Color.Transparent;
+            lblContato.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblContato.ForeColor = SystemColors.WindowText;
+            lblContato.Location = new Point(12, 226);
+            lblContato.Name = "lblContato";
+            lblContato.Size = new Size(98, 30);
+            lblContato.TabIndex = 3;
+            lblContato.Text = "Contato :";
             // 
             // txtDescricao
             // 
@@ -108,17 +108,17 @@
             txtEmail.Size = new Size(746, 35);
             txtEmail.TabIndex = 5;
             // 
-            // label4
+            // lblTipoModelo
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.WindowText;
-            label4.Location = new Point(12, 336);
-            label4.Name = "label4";
-            label4.Size = new Size(169, 30);
-            label4.TabIndex = 6;
-            label4.Text = "Tipo de modelo :";
+            lblTipoModelo.AutoSize = true;
+            lblTipoModelo.BackColor = Color.Transparent;
+            lblTipoModelo.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTipoModelo.ForeColor = SystemColors.WindowText;
+            lblTipoModelo.Location = new Point(12, 336);
+            lblTipoModelo.Name = "lblTipoModelo";
+            lblTipoModelo.Size = new Size(169, 30);
+            lblTipoModelo.TabIndex = 6;
+            lblTipoModelo.Text = "Tipo de modelo :";
             // 
             // btnAdicionarPedido
             // 
@@ -144,17 +144,17 @@
             cbTipodeModelo.Size = new Size(336, 38);
             cbTipodeModelo.TabIndex = 8;
             // 
-            // label5
+            // lblDeadline
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.WindowText;
-            label5.Location = new Point(12, 391);
-            label5.Name = "label5";
-            label5.Size = new Size(174, 30);
-            label5.TabIndex = 9;
-            label5.Text = "Data de Entrega :";
+            lblDeadline.AutoSize = true;
+            lblDeadline.BackColor = Color.Transparent;
+            lblDeadline.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblDeadline.ForeColor = SystemColors.WindowText;
+            lblDeadline.Location = new Point(12, 391);
+            lblDeadline.Name = "lblDeadline";
+            lblDeadline.Size = new Size(174, 30);
+            lblDeadline.TabIndex = 9;
+            lblDeadline.Text = "Data de Entrega :";
             // 
             // dtpDataEntrega
             // 
@@ -164,17 +164,17 @@
             dtpDataEntrega.Size = new Size(403, 35);
             dtpDataEntrega.TabIndex = 10;
             // 
-            // label6
+            // lblJogo
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.ForeColor = SystemColors.WindowText;
-            label6.Location = new Point(12, 444);
-            label6.Name = "label6";
-            label6.Size = new Size(203, 30);
-            label6.TabIndex = 11;
-            label6.Text = "Modelo é para Jogo:";
+            lblJogo.AutoSize = true;
+            lblJogo.BackColor = Color.Transparent;
+            lblJogo.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblJogo.ForeColor = SystemColors.WindowText;
+            lblJogo.Location = new Point(12, 444);
+            lblJogo.Name = "lblJogo";
+            lblJogo.Size = new Size(203, 30);
+            lblJogo.TabIndex = 11;
+            lblJogo.Text = "Modelo é para Jogo:";
             // 
             // panelBackground
             // 
@@ -184,16 +184,16 @@
             panelBackground.BottomColor = SystemColors.AppWorkspace;
             panelBackground.Controls.Add(cbModeloJogo);
             panelBackground.Controls.Add(gradientPanel1);
-            panelBackground.Controls.Add(label6);
+            panelBackground.Controls.Add(lblJogo);
             panelBackground.Controls.Add(dtpDataEntrega);
-            panelBackground.Controls.Add(label5);
+            panelBackground.Controls.Add(lblDeadline);
             panelBackground.Controls.Add(cbTipodeModelo);
             panelBackground.Controls.Add(btnAdicionarPedido);
-            panelBackground.Controls.Add(label4);
+            panelBackground.Controls.Add(lblTipoModelo);
             panelBackground.Controls.Add(txtEmail);
             panelBackground.Controls.Add(txtDescricao);
-            panelBackground.Controls.Add(label3);
-            panelBackground.Controls.Add(label2);
+            panelBackground.Controls.Add(lblContato);
+            panelBackground.Controls.Add(lblDescricao);
             panelBackground.Controls.Add(label1);
             panelBackground.Controls.Add(txtNome);
             panelBackground.CornerRadius = 0;
@@ -262,16 +262,16 @@
 
         private TextBox txtNome;
         private Label label1;
-        private Label label2;
-        private Label label3;
+        private Label lblDescricao;
+        private Label lblContato;
         private TextBox txtDescricao;
         private TextBox txtEmail;
-        private Label label4;
+        private Label lblTipoModelo;
         private Button btnAdicionarPedido;
         private ComboBox cbTipodeModelo;
-        private Label label5;
+        private Label lblDeadline;
         private DateTimePicker dtpDataEntrega;
-        private Label label6;
+        private Label lblJogo;
         private GPanel.GradientPanel panelBackground;
         private GPanel.GradientPanel gradientPanel1;
         private Label label7;

@@ -9,10 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 	ProjectSection(SolutionItems) = preProject
 		Class1.cs = Class1.cs
 		Class2.cs = Class2.cs
+		Class3.cs = Class3.cs
 		GradientPanel.cs = GradientPanel.cs
 		RoundedFlowPanel.cs = RoundedFlowPanel.cs
 		RoundedPanel.cs = RoundedPanel.cs
-		RoundedTextBox.cs = RoundedTextBox.cs
 	EndProjectSection
 EndProject
 Global

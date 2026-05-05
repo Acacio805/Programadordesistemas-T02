@@ -47,16 +47,17 @@
             panelLeftWhite = new Panel();
             pictureBox2 = new PictureBox();
             panelBackground = new GPanel.GradientPanel();
+            flpanelPedidosAtrasados = new Rflp.RoundedFlowLayoutPanel();
+            label3 = new Label();
             flpanelPedidosNovos = new Rflp.RoundedFlowLayoutPanel();
             flpanelPedidosAndamento = new Rflp.RoundedFlowLayoutPanel();
             labelPedidosAndamento = new Label();
             gradientPanel1 = new GPanel.GradientPanel();
+            roundedPanel1 = new RPanel.RoundedPanel();
+            txtPesquisa = new TextBox();
             btnPesquisar = new PictureBox();
-            txtPesquisar = new Rtxt.RoundedTextBox();
             flpanelPedidosConcluidos = new Rflp.RoundedFlowLayoutPanel();
             label1 = new Label();
-            flpanelPedidosAtrasados = new Rflp.RoundedFlowLayoutPanel();
-            label3 = new Label();
             panelP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)butaoRecarregar).BeginInit();
             panelLeft.SuspendLayout();
@@ -66,12 +67,13 @@
             ((System.ComponentModel.ISupportInitialize)btnAdd).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panelBackground.SuspendLayout();
+            flpanelPedidosAtrasados.SuspendLayout();
             flpanelPedidosNovos.SuspendLayout();
             flpanelPedidosAndamento.SuspendLayout();
             gradientPanel1.SuspendLayout();
+            roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnPesquisar).BeginInit();
             flpanelPedidosConcluidos.SuspendLayout();
-            flpanelPedidosAtrasados.SuspendLayout();
             SuspendLayout();
             // 
             // panelP
@@ -100,7 +102,6 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.ForeColor = Color.DimGray;
             textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
             // 
             // button2
             // 
@@ -253,6 +254,19 @@
             panelBackground.Name = "panelBackground";
             panelBackground.TopColor = Color.Aqua;
             // 
+            // flpanelPedidosAtrasados
+            // 
+            resources.ApplyResources(flpanelPedidosAtrasados, "flpanelPedidosAtrasados");
+            flpanelPedidosAtrasados.BackColor = SystemColors.Control;
+            flpanelPedidosAtrasados.BorderRadius = 20;
+            flpanelPedidosAtrasados.Controls.Add(label3);
+            flpanelPedidosAtrasados.Name = "flpanelPedidosAtrasados";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            // 
             // flpanelPedidosNovos
             // 
             resources.ApplyResources(flpanelPedidosNovos, "flpanelPedidosNovos");
@@ -281,11 +295,25 @@
             gradientPanel1.Angle = 0F;
             gradientPanel1.BackColor = Color.White;
             gradientPanel1.BottomColor = Color.Purple;
+            gradientPanel1.Controls.Add(roundedPanel1);
             gradientPanel1.Controls.Add(btnPesquisar);
-            gradientPanel1.Controls.Add(txtPesquisar);
             gradientPanel1.CornerRadius = 0;
             gradientPanel1.Name = "gradientPanel1";
             gradientPanel1.TopColor = Color.Navy;
+            // 
+            // roundedPanel1
+            // 
+            resources.ApplyResources(roundedPanel1, "roundedPanel1");
+            roundedPanel1.Controls.Add(txtPesquisa);
+            roundedPanel1.CornerRadius = 20;
+            roundedPanel1.Name = "roundedPanel1";
+            // 
+            // txtPesquisa
+            // 
+            resources.ApplyResources(txtPesquisa, "txtPesquisa");
+            txtPesquisa.BorderStyle = BorderStyle.None;
+            txtPesquisa.Name = "txtPesquisa";
+            txtPesquisa.TextChanged += txtPesquisa_TextChanged;
             // 
             // btnPesquisar
             // 
@@ -295,12 +323,7 @@
             btnPesquisar.Image = Properties.Resources.search_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
             btnPesquisar.Name = "btnPesquisar";
             btnPesquisar.TabStop = false;
-            // 
-            // txtPesquisar
-            // 
-            resources.ApplyResources(txtPesquisar, "txtPesquisar");
-            txtPesquisar.BackColor = Color.White;
-            txtPesquisar.Name = "txtPesquisar";
+            btnPesquisar.Click += btnPesquisar_Click;
             // 
             // flpanelPedidosConcluidos
             // 
@@ -314,19 +337,6 @@
             // 
             resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            // 
-            // flpanelPedidosAtrasados
-            // 
-            resources.ApplyResources(flpanelPedidosAtrasados, "flpanelPedidosAtrasados");
-            flpanelPedidosAtrasados.BackColor = SystemColors.Control;
-            flpanelPedidosAtrasados.BorderRadius = 20;
-            flpanelPedidosAtrasados.Controls.Add(label3);
-            flpanelPedidosAtrasados.Name = "flpanelPedidosAtrasados";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(label3, "label3");
-            label3.Name = "label3";
             // 
             // frm3DCreativeDesign
             // 
@@ -346,16 +356,19 @@
             ((System.ComponentModel.ISupportInitialize)btnAdd).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panelBackground.ResumeLayout(false);
+            panelBackground.PerformLayout();
+            flpanelPedidosAtrasados.ResumeLayout(false);
+            flpanelPedidosAtrasados.PerformLayout();
             flpanelPedidosNovos.ResumeLayout(false);
             flpanelPedidosNovos.PerformLayout();
             flpanelPedidosAndamento.ResumeLayout(false);
             flpanelPedidosAndamento.PerformLayout();
             gradientPanel1.ResumeLayout(false);
+            roundedPanel1.ResumeLayout(false);
+            roundedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnPesquisar).EndInit();
             flpanelPedidosConcluidos.ResumeLayout(false);
             flpanelPedidosConcluidos.PerformLayout();
-            flpanelPedidosAtrasados.ResumeLayout(false);
-            flpanelPedidosAtrasados.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -378,8 +391,6 @@
         private PictureBox butaoRecarregar;
         private Button button2;
         private Button button1;
-        private Rtxt.RoundedTextBox roundedTextBox1;
-        private Rtxt.RoundedTextBox txtPesquisar;
         private PictureBox btnPesquisar;
         private Rflp.RoundedFlowLayoutPanel flpanelPedidosNovos;
         private Rflp.RoundedFlowLayoutPanel flpanelPedidosConcluidos;
@@ -389,5 +400,7 @@
         private Label label2;
         private Rflp.RoundedFlowLayoutPanel flpanelPedidosAtrasados;
         private Label label3;
+        private RPanel.RoundedPanel roundedPanel1;
+        private TextBox txtPesquisa;
     }
 }

@@ -12,14 +12,15 @@ namespace APP
     internal class RoundedButton : Button
     {
         // Adjust this to change how round the corners are
-        public int BorderRadius { get; set; } = 20;
+        public int BorderRadius { get; set; } = 5;
 
-        protected override void OnPaint(PaintEventArgs pevent)
+        protected override void OnPaint(PaintEventArgs e)
         {
-            base.OnPaint(pevent);
+            base.OnPaint(e);
 
             Rectangle rect = new Rectangle(0, 0, this.Width, this.Height);
             GraphicsPath path = new GraphicsPath();
+            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
             int d = BorderRadius * 2;
             path.AddArc(rect.X, rect.Y, d, d, 180, 90);
@@ -31,12 +32,12 @@ namespace APP
             this.Region = new Region(path);
 
             // Optional: Draw a custom border to make it look cleaner
-            using (Pen pen = new Pen(this.FlatAppearance.BorderColor, this.FlatAppearance.BorderSize))
-            {
-                pen.Alignment = PenAlignment.Inset;
-                pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-                pevent.Graphics.DrawPath(pen, path);
-            }
+            //using (Pen pen = new Pen(this.FlatAppearance.BorderColor, this.FlatAppearance.BorderSize))
+            //{
+            //    pen.Alignment = PenAlignment.Inset;
+            //    pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            //    pevent.Graphics.DrawPath(pen, path);
+            //}
         }
     }
 }
