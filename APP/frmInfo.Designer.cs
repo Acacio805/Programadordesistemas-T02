@@ -43,7 +43,13 @@
             cbModeloJogo = new ComboBox();
             panelTop = new GPanel.GradientPanel();
             label7 = new Label();
+            roundedPanel2 = new RPanel.RoundedPanel();
+            roundedPanel1 = new RPanel.RoundedPanel();
+            roundedPanel3 = new RPanel.RoundedPanel();
             panelTop.SuspendLayout();
+            roundedPanel2.SuspendLayout();
+            roundedPanel1.SuspendLayout();
+            roundedPanel3.SuspendLayout();
             SuspendLayout();
             // 
             // label6
@@ -102,18 +108,20 @@
             // 
             // txtEmail
             // 
+            txtEmail.BorderStyle = BorderStyle.None;
             txtEmail.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtEmail.Location = new Point(219, 190);
+            txtEmail.Location = new Point(15, 10);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(746, 35);
+            txtEmail.Size = new Size(746, 28);
             txtEmail.TabIndex = 18;
             // 
             // txtDescricao
             // 
+            txtDescricao.BorderStyle = BorderStyle.None;
             txtDescricao.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtDescricao.Location = new Point(219, 245);
+            txtDescricao.Location = new Point(15, 8);
             txtDescricao.Name = "txtDescricao";
-            txtDescricao.Size = new Size(746, 35);
+            txtDescricao.Size = new Size(746, 28);
             txtDescricao.TabIndex = 17;
             // 
             // label3
@@ -154,10 +162,11 @@
             // 
             // txtNome
             // 
+            txtNome.BorderStyle = BorderStyle.None;
             txtNome.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNome.Location = new Point(219, 136);
+            txtNome.Location = new Point(15, 7);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(746, 35);
+            txtNome.Size = new Size(746, 28);
             txtNome.TabIndex = 13;
             // 
             // btnAtualizar
@@ -211,11 +220,44 @@
             label7.TabIndex = 28;
             label7.Text = "Detalhes";
             // 
+            // roundedPanel2
+            // 
+            roundedPanel2.BackColor = Color.White;
+            roundedPanel2.Controls.Add(txtEmail);
+            roundedPanel2.CornerRadius = 20;
+            roundedPanel2.Location = new Point(204, 187);
+            roundedPanel2.Name = "roundedPanel2";
+            roundedPanel2.Size = new Size(773, 44);
+            roundedPanel2.TabIndex = 30;
+            // 
+            // roundedPanel1
+            // 
+            roundedPanel1.BackColor = Color.White;
+            roundedPanel1.Controls.Add(txtNome);
+            roundedPanel1.CornerRadius = 20;
+            roundedPanel1.Location = new Point(204, 130);
+            roundedPanel1.Name = "roundedPanel1";
+            roundedPanel1.Size = new Size(773, 44);
+            roundedPanel1.TabIndex = 31;
+            // 
+            // roundedPanel3
+            // 
+            roundedPanel3.BackColor = Color.White;
+            roundedPanel3.Controls.Add(txtDescricao);
+            roundedPanel3.CornerRadius = 20;
+            roundedPanel3.Location = new Point(204, 243);
+            roundedPanel3.Name = "roundedPanel3";
+            roundedPanel3.Size = new Size(773, 44);
+            roundedPanel3.TabIndex = 32;
+            // 
             // frmInfo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(989, 617);
+            Controls.Add(roundedPanel3);
+            Controls.Add(roundedPanel1);
+            Controls.Add(roundedPanel2);
             Controls.Add(panelTop);
             Controls.Add(cbModeloJogo);
             Controls.Add(btnAtualizar);
@@ -224,17 +266,20 @@
             Controls.Add(label5);
             Controls.Add(cbTipodeModelo);
             Controls.Add(label4);
-            Controls.Add(txtEmail);
-            Controls.Add(txtDescricao);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(txtNome);
             Name = "frmInfo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Informação do Pedido";
             panelTop.ResumeLayout(false);
             panelTop.PerformLayout();
+            roundedPanel2.ResumeLayout(false);
+            roundedPanel2.PerformLayout();
+            roundedPanel1.ResumeLayout(false);
+            roundedPanel1.PerformLayout();
+            roundedPanel3.ResumeLayout(false);
+            roundedPanel3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -255,5 +300,8 @@
         private ComboBox cbModeloJogo;
         private GPanel.GradientPanel panelTop;
         private Label label7;
+        private RPanel.RoundedPanel roundedPanel2;
+        private RPanel.RoundedPanel roundedPanel1;
+        private RPanel.RoundedPanel roundedPanel3;
     }
 }

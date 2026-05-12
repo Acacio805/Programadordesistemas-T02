@@ -93,6 +93,36 @@ namespace APP.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_back_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40 {
+            get {
+                object obj = ResourceManager.GetObject("arrow_back_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap check_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40 {
+            get {
+                object obj = ResourceManager.GetObject("check_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40 {
+            get {
+                object obj = ResourceManager.GetObject("delete_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete_64dp_000000_FILL0_wght400_GRAD0_opsz48 {
             get {
                 object obj = ResourceManager.GetObject("delete_64dp_000000_FILL0_wght400_GRAD0_opsz48", resourceCulture);
@@ -106,6 +136,16 @@ namespace APP.Properties {
         internal static System.Drawing.Bitmap delete_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48 {
             get {
                 object obj = ResourceManager.GetObject("delete_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40 {
+            get {
+                object obj = ResourceManager.GetObject("edit_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

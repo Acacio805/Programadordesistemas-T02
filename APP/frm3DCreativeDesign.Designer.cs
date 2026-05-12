@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm3DCreativeDesign));
             panelP = new Panel();
+            button3 = new Button();
             label2 = new Label();
             textBox1 = new TextBox();
             button2 = new Button();
@@ -40,8 +42,6 @@
             labelPedidos = new Label();
             butaoRecarregar = new PictureBox();
             panelLeft = new GPanel.GradientPanel();
-            btnTrash = new PictureBox();
-            btnSettings = new PictureBox();
             flowLayoutPanel1 = new FlowLayoutPanel();
             btnAdd = new PictureBox();
             panelLeftWhite = new Panel();
@@ -53,16 +53,17 @@
             flpanelPedidosAndamento = new Rflp.RoundedFlowLayoutPanel();
             labelPedidosAndamento = new Label();
             gradientPanel1 = new GPanel.GradientPanel();
+            lblData = new Label();
+            lblHora = new Label();
             roundedPanel1 = new RPanel.RoundedPanel();
             txtPesquisa = new TextBox();
             btnPesquisar = new PictureBox();
             flpanelPedidosConcluidos = new Rflp.RoundedFlowLayoutPanel();
             label1 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             panelP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)butaoRecarregar).BeginInit();
             panelLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnTrash).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)btnSettings).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnAdd).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -80,6 +81,7 @@
             // 
             resources.ApplyResources(panelP, "panelP");
             panelP.BackColor = Color.White;
+            panelP.Controls.Add(button3);
             panelP.Controls.Add(label2);
             panelP.Controls.Add(textBox1);
             panelP.Controls.Add(button2);
@@ -88,6 +90,17 @@
             panelP.Controls.Add(txtTipo);
             panelP.Controls.Add(btn);
             panelP.Name = "panelP";
+            // 
+            // button3
+            // 
+            resources.ApplyResources(button3, "button3");
+            button3.BackColor = Color.Gold;
+            button3.Cursor = Cursors.Hand;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.ForeColor = SystemColors.MenuHighlight;
+            button3.Image = Properties.Resources.arrow_back_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40;
+            button3.Name = "button3";
+            button3.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -111,6 +124,7 @@
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 64, 0);
             button2.ForeColor = SystemColors.ButtonShadow;
+            button2.Image = Properties.Resources.delete_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40;
             button2.Name = "button2";
             button2.UseVisualStyleBackColor = false;
             // 
@@ -121,6 +135,7 @@
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.ForeColor = SystemColors.MenuHighlight;
+            button1.Image = Properties.Resources.edit_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40;
             button1.Name = "button1";
             button1.UseVisualStyleBackColor = false;
             // 
@@ -173,36 +188,12 @@
             panelLeft.Angle = 90F;
             panelLeft.BackColor = Color.White;
             panelLeft.BottomColor = Color.Purple;
-            panelLeft.Controls.Add(btnTrash);
-            panelLeft.Controls.Add(btnSettings);
             panelLeft.Controls.Add(flowLayoutPanel1);
             panelLeft.Controls.Add(panelLeftWhite);
             panelLeft.Controls.Add(pictureBox2);
             panelLeft.CornerRadius = 0;
             panelLeft.Name = "panelLeft";
             panelLeft.TopColor = Color.DarkBlue;
-            // 
-            // btnTrash
-            // 
-            resources.ApplyResources(btnTrash, "btnTrash");
-            btnTrash.BackColor = Color.Transparent;
-            btnTrash.Cursor = Cursors.Hand;
-            btnTrash.ErrorImage = Properties.Resources.add_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
-            btnTrash.Image = Properties.Resources.delete_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
-            btnTrash.InitialImage = Properties.Resources.settings_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
-            btnTrash.Name = "btnTrash";
-            btnTrash.TabStop = false;
-            // 
-            // btnSettings
-            // 
-            resources.ApplyResources(btnSettings, "btnSettings");
-            btnSettings.BackColor = Color.Transparent;
-            btnSettings.Cursor = Cursors.Hand;
-            btnSettings.ErrorImage = Properties.Resources.add_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
-            btnSettings.Image = Properties.Resources.settings_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
-            btnSettings.InitialImage = Properties.Resources.settings_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
-            btnSettings.Name = "btnSettings";
-            btnSettings.TabStop = false;
             // 
             // flowLayoutPanel1
             // 
@@ -295,17 +286,33 @@
             gradientPanel1.Angle = 0F;
             gradientPanel1.BackColor = Color.White;
             gradientPanel1.BottomColor = Color.Purple;
+            gradientPanel1.Controls.Add(lblData);
+            gradientPanel1.Controls.Add(lblHora);
             gradientPanel1.Controls.Add(roundedPanel1);
             gradientPanel1.Controls.Add(btnPesquisar);
             gradientPanel1.CornerRadius = 0;
             gradientPanel1.Name = "gradientPanel1";
             gradientPanel1.TopColor = Color.Navy;
             // 
+            // lblData
+            // 
+            resources.ApplyResources(lblData, "lblData");
+            lblData.BackColor = Color.Transparent;
+            lblData.ForeColor = Color.White;
+            lblData.Name = "lblData";
+            // 
+            // lblHora
+            // 
+            resources.ApplyResources(lblHora, "lblHora");
+            lblHora.BackColor = Color.Transparent;
+            lblHora.ForeColor = Color.White;
+            lblHora.Name = "lblHora";
+            // 
             // roundedPanel1
             // 
             resources.ApplyResources(roundedPanel1, "roundedPanel1");
             roundedPanel1.Controls.Add(txtPesquisa);
-            roundedPanel1.CornerRadius = 20;
+            roundedPanel1.CornerRadius = 15;
             roundedPanel1.Name = "roundedPanel1";
             // 
             // txtPesquisa
@@ -313,7 +320,7 @@
             resources.ApplyResources(txtPesquisa, "txtPesquisa");
             txtPesquisa.BorderStyle = BorderStyle.None;
             txtPesquisa.Name = "txtPesquisa";
-            txtPesquisa.TextChanged += txtPesquisa_TextChanged;
+            txtPesquisa.KeyDown += txtPesquisa_KeyDown;
             // 
             // btnPesquisar
             // 
@@ -338,6 +345,12 @@
             resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
+            // 
             // frm3DCreativeDesign
             // 
             resources.ApplyResources(this, "$this");
@@ -346,12 +359,11 @@
             Controls.Add(panelLeft);
             Name = "frm3DCreativeDesign";
             WindowState = FormWindowState.Maximized;
+            Load += frm3DCreativeDesign_Load;
             panelP.ResumeLayout(false);
             panelP.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)butaoRecarregar).EndInit();
             panelLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)btnTrash).EndInit();
-            ((System.ComponentModel.ISupportInitialize)btnSettings).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnAdd).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -364,6 +376,7 @@
             flpanelPedidosAndamento.ResumeLayout(false);
             flpanelPedidosAndamento.PerformLayout();
             gradientPanel1.ResumeLayout(false);
+            gradientPanel1.PerformLayout();
             roundedPanel1.ResumeLayout(false);
             roundedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnPesquisar).EndInit();
@@ -379,8 +392,6 @@
         private Label labelPedidos;
         private GPanel.GradientPanel panelLeft;
         private PictureBox btnAdd;
-        private PictureBox btnTrash;
-        private PictureBox btnSettings;
         private GPanel.GradientPanel panelBackground;
         private GPanel.GradientPanel gradientPanel1;
         private PictureBox pictureBox2;
@@ -402,5 +413,9 @@
         private Label label3;
         private RPanel.RoundedPanel roundedPanel1;
         private TextBox txtPesquisa;
+        private Button button3;
+        private Label lblData;
+        private Label lblHora;
+        private System.Windows.Forms.Timer timer1;
     }
 }

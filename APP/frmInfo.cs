@@ -29,13 +29,14 @@ namespace APP
             id = _form1.Id_Pedido;
             CarregarPedido(id);
         }
-
         private void CarregarPedido(int id)
         {
             using (MySqlConnection conexao = new MySqlConnection(data_source))
             {
                 try
                 {
+                    conexao.Open();
+                    
                     string sql = $"SELECT formulario.contato, formulario.descricao, cliente.nome_cliente, formulario.tipo_modelo, formulario.deadline, formulario.modelo_jogo " +
                                  $"FROM formulario " +
                                  $"INNER JOIN cliente ON formulario.id_comissao = cliente.id_cliente " +
@@ -44,8 +45,7 @@ namespace APP
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
 
                     comando.Parameters.AddWithValue("id", id);
-
-                    conexao.Open();
+                   
                     MySqlDataReader reader = comando.ExecuteReader();
 
                     while (reader.Read())
@@ -85,8 +85,6 @@ namespace APP
                         }
                     }
                 }
-
-
                 catch (MySqlException ex)
                 {
                     //Trata erros relacionados ao MySQL
@@ -99,25 +97,16 @@ namespace APP
                     MessageBox.Show("Ocorreu: " + ex.Message,
                                     "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                finally
-                {
-                    //Garante que a conexão com o banco será fechada, mesmo se ocorrer erro
-                    if (conexao != null && conexao.State == ConnectionState.Open)
-                    {
-                        conexao.Close();
-                    }
-                }
             }
-
         }
-
         private void AtualizarPedido()
         {
             using (MySqlConnection conexao = new MySqlConnection(data_source))
-            {
-                conexao.Open();
+            {               
                 try
                 {
+                    conexao.Open();
+
                     string sql = $"UPDATE formulario " +
                                  $"INNER JOIN cliente " +
                                  $" ON formulario.id_comissao = cliente.id_cliente " +
@@ -127,13 +116,13 @@ namespace APP
                                  $"cliente.nome_cliente = @nome, " +
                                  $"formulario.tipo_modelo = @tipo_modelo, " +
                                  $"formulario.deadline = @deadline, " +
-                                 $"formulario.modelo_jogo = @modelo_jogo " +    
+                                 $"formulario.modelo_jogo = @modelo_jogo " +
                                  $"WHERE formulario.id_comissao = @id";
 
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
-                    
+
                     comando.Parameters.AddWithValue("id", id);
-                    
+
                     comando.Parameters.AddWithValue("contato", txtEmail.Text.Trim());
                     comando.Parameters.AddWithValue("nome", txtNome.Text.Trim());
                     comando.Parameters.AddWithValue("descricao", txtDescricao.Text.Trim());
@@ -155,7 +144,7 @@ namespace APP
                                     "Sucesso",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
-                    _form1.regarregarPedidos();
+                    _form1.recarregarPedidos();
                 }
                 catch (MySqlException ex)
                 {
@@ -169,19 +158,8 @@ namespace APP
                     MessageBox.Show("Ocorreu: " + ex.Message,
                                     "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                finally
-                {
-                    //Garante que a conexão com o banco será fechada, mesmo se ocorrer erro
-                    if (conexao != null && conexao.State == ConnectionState.Open)
-                    {
-                        conexao.Close();
-                    }
-                    
-                }
             }
-
         }
-
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
             AtualizarPedido();
