@@ -44,6 +44,7 @@
             panelLeft = new GPanel.GradientPanel();
             flowLayoutPanel1 = new FlowLayoutPanel();
             btnAdd = new PictureBox();
+            btnArquivado = new PictureBox();
             panelLeftWhite = new Panel();
             pictureBox2 = new PictureBox();
             panelBackground = new GPanel.GradientPanel();
@@ -66,6 +67,7 @@
             panelLeft.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnAdd).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnArquivado).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panelBackground.SuspendLayout();
             flpanelPedidosAtrasados.SuspendLayout();
@@ -160,7 +162,7 @@
             btn.Cursor = Cursors.Hand;
             btn.FlatAppearance.BorderSize = 0;
             btn.ForeColor = SystemColors.MenuHighlight;
-            btn.Image = Properties.Resources.more_horiz_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24;
+            btn.Image = Properties.Resources.archive_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40;
             btn.Name = "btn";
             btn.UseVisualStyleBackColor = false;
             // 
@@ -201,6 +203,7 @@
             flowLayoutPanel1.BackColor = Color.Transparent;
             flowLayoutPanel1.Controls.Add(butaoRecarregar);
             flowLayoutPanel1.Controls.Add(btnAdd);
+            flowLayoutPanel1.Controls.Add(btnArquivado);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // btnAdd
@@ -214,6 +217,18 @@
             btnAdd.Name = "btnAdd";
             btnAdd.TabStop = false;
             btnAdd.Click += btnAdd_Click;
+            // 
+            // btnArquivado
+            // 
+            resources.ApplyResources(btnArquivado, "btnArquivado");
+            btnArquivado.BackColor = Color.Transparent;
+            btnArquivado.Cursor = Cursors.Hand;
+            btnArquivado.ErrorImage = Properties.Resources.add_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnArquivado.Image = Properties.Resources.archive_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnArquivado.InitialImage = Properties.Resources.settings_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48;
+            btnArquivado.Name = "btnArquivado";
+            btnArquivado.TabStop = false;
+            btnArquivado.Click += btnArquivado_Click;
             // 
             // panelLeftWhite
             // 
@@ -366,6 +381,7 @@
             panelLeft.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnAdd).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnArquivado).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panelBackground.ResumeLayout(false);
             panelBackground.PerformLayout();
@@ -417,5 +433,6 @@
         private Label lblData;
         private Label lblHora;
         private System.Windows.Forms.Timer timer1;
+        private PictureBox btnArquivado;
     }
 }

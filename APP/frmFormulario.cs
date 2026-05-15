@@ -31,12 +31,13 @@ namespace APP
         {
             using (MySqlConnection conexao = new MySqlConnection(data_source))
             {
+                conexao.Open();
+
                 using (MySqlTransaction transacao = conexao.BeginTransaction())
                 {
                     try
                     {
-                        conexao.Open();
-
+                        
                         //Validade campos obrigatorios
                         if (string.IsNullOrEmpty(txtNome.Text.Trim()))
                         {
@@ -109,7 +110,7 @@ namespace APP
                         );
 
                         _form1.recarregarPedidos();
-
+                        this.Close();
                     }
                     catch (MySqlException ex)
                     {

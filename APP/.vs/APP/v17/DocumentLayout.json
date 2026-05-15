@@ -3,48 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\frm3dcreativedesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frm3dcreativedesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frm3dcreativedesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frm3dcreativedesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\frminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\roundedflowlayoutpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:roundedflowlayoutpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmformulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frmformulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\frmformulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frmformulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\roundedbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:roundedbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\frm3dcreativedesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frm3dcreativedesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\frmarquivados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frmarquivados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\frmarquivados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frmarquivados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\frmarquivados.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frmarquivados.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmformulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frmformulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\roundedpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:roundedpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\frm3dcreativedesign.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frm3dcreativedesign.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\roundedbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:roundedbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\frminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\roundedtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:roundedtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\roundedflowlayoutpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:roundedflowlayoutpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|c:\\users\\acacio.sribeiro1\\source\\repos\\app\\frm3dcreativedesign.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4730E896-7469-4E5D-8578-944C327C5927}|APP.csproj|solutionrelative:frm3dcreativedesign.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,48 +66,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RoundedButton.cs",
-              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedButton.cs",
-              "RelativeDocumentMoniker": "RoundedButton.cs",
-              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedButton.cs",
-              "RelativeToolTip": "RoundedButton.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "frmArquivados.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmArquivados.Designer.cs",
+              "RelativeDocumentMoniker": "frmArquivados.Designer.cs",
+              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmArquivados.Designer.cs",
+              "RelativeToolTip": "frmArquivados.Designer.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAnwCwAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T18:38:00.591Z"
+              "WhenOpened": "2026-05-14T18:32:24.197Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RoundedFlowLayoutPanel.cs",
-              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedFlowLayoutPanel.cs",
-              "RelativeDocumentMoniker": "RoundedFlowLayoutPanel.cs",
-              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedFlowLayoutPanel.cs",
-              "RelativeToolTip": "RoundedFlowLayoutPanel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Title": "frmArquivados.cs",
+              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmArquivados.cs",
+              "RelativeDocumentMoniker": "frmArquivados.cs",
+              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmArquivados.cs",
+              "RelativeToolTip": "frmArquivados.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAxwEMAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T18:30:48.288Z"
+              "WhenOpened": "2026-05-14T17:43:11.385Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "frmArquivados.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmArquivados.cs",
+              "RelativeDocumentMoniker": "frmArquivados.cs",
+              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmArquivados.cs [Projeto]",
+              "RelativeToolTip": "frmArquivados.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T19:10:05.408Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "frm3DCreativeDesign.cs",
               "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frm3DCreativeDesign.cs",
               "RelativeDocumentMoniker": "frm3DCreativeDesign.cs",
               "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frm3DCreativeDesign.cs",
               "RelativeToolTip": "frm3DCreativeDesign.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAUwKYAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAIwDQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-23T19:12:37.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "frm3DCreativeDesign.cs [Design - portugu\u00EAs (Brasil)]",
               "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frm3DCreativeDesign.cs",
               "RelativeDocumentMoniker": "frm3DCreativeDesign.cs",
@@ -107,7 +133,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "frmFormulario.cs",
+              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmFormulario.cs",
+              "RelativeDocumentMoniker": "frmFormulario.cs",
+              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmFormulario.cs",
+              "RelativeToolTip": "frmFormulario.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T19:47:56.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RoundedPanel.cs",
+              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedPanel.cs",
+              "RelativeDocumentMoniker": "RoundedPanel.cs",
+              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedPanel.cs",
+              "RelativeToolTip": "RoundedPanel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T18:24:55.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RoundedButton.cs",
+              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedButton.cs",
+              "RelativeDocumentMoniker": "RoundedButton.cs",
+              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedButton.cs",
+              "RelativeToolTip": "RoundedButton.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T18:38:00.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "frmFormulario.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmFormulario.cs",
               "RelativeDocumentMoniker": "frmFormulario.cs",
@@ -119,53 +182,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "frmFormulario.cs",
-              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmFormulario.cs",
-              "RelativeDocumentMoniker": "frmFormulario.cs",
-              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmFormulario.cs",
-              "RelativeToolTip": "frmFormulario.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T19:47:56.356Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmInfo.cs [Design]",
+              "Title": "frmInfo.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmInfo.cs",
               "RelativeDocumentMoniker": "frmInfo.cs",
-              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmInfo.cs [Design]",
-              "RelativeToolTip": "frmInfo.cs [Design]",
+              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmInfo.cs [Projeto]",
+              "RelativeToolTip": "frmInfo.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-23T18:34:08.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "frmInfo.cs",
               "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmInfo.cs",
               "RelativeDocumentMoniker": "frmInfo.cs",
               "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frmInfo.cs",
               "RelativeToolTip": "frmInfo.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAowHMAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAADwv1cAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-23T18:35:29.053Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RoundedPanel.cs",
-              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedPanel.cs",
-              "RelativeDocumentMoniker": "RoundedPanel.cs",
-              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedPanel.cs",
-              "RelativeToolTip": "RoundedPanel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "RoundedTextBox.cs",
+              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedTextBox.cs",
+              "RelativeDocumentMoniker": "RoundedTextBox.cs",
+              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedTextBox.cs",
+              "RelativeToolTip": "RoundedTextBox.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T18:24:55.824Z"
+              "WhenOpened": "2026-05-05T17:35:49.223Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
+              "Title": "RoundedFlowLayoutPanel.cs",
+              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedFlowLayoutPanel.cs",
+              "RelativeDocumentMoniker": "RoundedFlowLayoutPanel.cs",
+              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedFlowLayoutPanel.cs",
+              "RelativeToolTip": "RoundedFlowLayoutPanel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T18:30:48.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "frm3DCreativeDesign.Designer.cs",
               "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\frm3DCreativeDesign.Designer.cs",
               "RelativeDocumentMoniker": "frm3DCreativeDesign.Designer.cs",
@@ -175,18 +238,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-07T18:25:20.712Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RoundedTextBox.cs",
-              "DocumentMoniker": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedTextBox.cs",
-              "RelativeDocumentMoniker": "RoundedTextBox.cs",
-              "ToolTip": "C:\\Users\\acacio.sribeiro1\\source\\repos\\APP\\RoundedTextBox.cs",
-              "RelativeToolTip": "RoundedTextBox.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T17:35:49.223Z"
             }
           ]
         }

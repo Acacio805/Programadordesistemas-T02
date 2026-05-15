@@ -1,12 +1,26 @@
 ﻿using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace RPanel
 {
     public class RoundedPanel : Panel
     {
+        
         public int CornerRadius { get; set; } = 20;
+
+        public RoundedPanel()
+        {
+            // Enables double buffering
+            this.DoubleBuffered = true;
+
+            // Optional: Additional styles for smoother rendering
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint |
+                          ControlStyles.UserPaint |
+                          ControlStyles.OptimizedDoubleBuffer, true);
+            this.UpdateStyles();
+        }
 
         protected override void OnPaint(PaintEventArgs e)
         {

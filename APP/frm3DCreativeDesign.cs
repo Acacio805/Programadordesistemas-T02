@@ -226,6 +226,11 @@ namespace APP
             {
                 int id = p.Id;
 
+                if (id == 4)
+                {
+                    continue;
+                }
+
                 RoundedPanel pedidoPanel = new RoundedPanel()
                 {
                     Size = new Size(361, 138),
@@ -314,98 +319,123 @@ namespace APP
                 pedidoPanel.Controls.Add(txtEmail);
                 pedidoPanel.Controls.Add(txtDesc);
 
-                this.SuspendLayout();
-
-                if (p.status == 0)
+                string deadlinestring = p.deadline.ToString("dd-MM");
+                System.Windows.Forms.Label lblpedidoDeadline = new System.Windows.Forms.Label()
                 {
-                    pedidoPanel.Controls.Add(btnAceitar);
-                    pedidoPanel.Controls.Add(btnDeletar);
-                    pedidoPanel.Controls.Add(btnInfo);
+                    Text = deadlinestring,
+                    ForeColor = Color.Green,
+                    Location = new Point(10, 106),
+                    Font = new Font("Segoe UI Semibold", 14),
+                };
 
-                    flpanelPedidosNovos.Controls.Add(pedidoPanel);
-                }
+                pedidoPanel.Controls.Add(lblpedidoDeadline);
 
-                if (p.status == 1)
-                {
-                    RoundedButton btnConcluido = new RoundedButton()
-                    {
-                        BackColor = Color.DarkGreen,
-                        Size = new Size(51, 27),
-                        Location = new System.Drawing.Point(187, 104),
-                        FlatStyle = FlatStyle.Flat,
-                    };
-                    btnConcluido.FlatStyle = FlatStyle.Flat;
-                    btnConcluido.FlatAppearance.BorderSize = 0;
-                    btnConcluido.Image = bmpAceitar;
-
-                    btnConcluido.Click += new EventHandler(btnConcluido_Click);
-                    btnConcluido.Tag = id;
-
-                    RoundedButton btnVoltarNovo = new RoundedButton()
-                    {
-                        BackColor = Color.Gold,
-                        Size = new Size(51, 27),
-                        Location = new System.Drawing.Point(130, 104),
-                        FlatStyle = FlatStyle.Flat,
-                    };
-                    btnVoltarNovo.FlatStyle = FlatStyle.Flat;
-                    btnVoltarNovo.FlatAppearance.BorderSize = 0;
-                    var bmpVoltar = new Bitmap(APP.Properties.Resources.arrow_back_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40);
-                    btnVoltarNovo.Image = bmpVoltar;
-
-                    btnVoltarNovo.Click += new EventHandler(btnVoltarNovo_Click);
-                    btnVoltarNovo.Tag = id;
-
-                    pedidoPanel.Controls.Add(btnConcluido);
-                    pedidoPanel.Controls.Add(btnDeletar);
-                    pedidoPanel.Controls.Add(btnInfo);
-                    pedidoPanel.Controls.Add(btnVoltarNovo);
-
-                    flpanelPedidosAndamento.Controls.Add(pedidoPanel);
-                }
-
-                if (p.status == 2)
-                {
-                    RoundedButton btnVoltarAndamento = new RoundedButton()
-                    {
-                        BackColor = Color.Gold,
-                        Size = new Size(51, 27),
-                        Location = new System.Drawing.Point(244, 104),
-                        FlatStyle = FlatStyle.Flat,
-                    };
-                    btnVoltarAndamento.FlatStyle = FlatStyle.Flat;
-                    btnVoltarAndamento.FlatAppearance.BorderSize = 0;
-                    var bmpVoltar = new Bitmap(APP.Properties.Resources.arrow_back_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40);
-                    btnVoltarAndamento.Image = bmpVoltar;
-
-                    btnVoltarAndamento.Click += new EventHandler(btnVoltarAndamento_Click);
-                    btnVoltarAndamento.Tag = id;
-
-                    pedidoPanel.Controls.Add(btnVoltarAndamento);
-                    pedidoPanel.Controls.Add(btnDeletar);
-
-                    flpanelPedidosConcluidos.Controls.Add(pedidoPanel);
-                }
+                var bmpVoltar = new Bitmap(APP.Properties.Resources.arrow_back_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40);
 
                 DateTime data = DateTime.Now;
-                if (data > p.deadline && p.status == 1)
+                switch (p.status)
                 {
-                    string deadlinestring = p.deadline.ToString("dd-MM");
-                    System.Windows.Forms.Label lblpedidoAtrasado = new System.Windows.Forms.Label()
-                    {
-                        Text = deadlinestring,
-                        ForeColor = Color.Red,
-                        Location = new Point(11, 106),
-                        Font = new Font("Segoe UI Semibold", 14),
-                    };
-                    pedidoPanel.Controls.Add(lblpedidoAtrasado);
+                    case 0:
+                        pedidoPanel.Controls.Add(btnAceitar);
+                        pedidoPanel.Controls.Add(btnDeletar);
+                        pedidoPanel.Controls.Add(btnInfo);
 
-                    flpanelPedidosAtrasados.Controls.Add(pedidoPanel);
+                        flpanelPedidosNovos.Controls.Add(pedidoPanel);
 
-                    flpanelPedidosAtrasados.Visible = true;
+                        if (data > p.deadline)
+                        {
+                            lblpedidoDeadline.ForeColor = Color.Red;
+                        }
+
+                        break;
+                    case 1:
+                        RoundedButton btnConcluido = new RoundedButton()
+                        {
+                            BackColor = Color.DarkGreen,
+                            Size = new Size(51, 27),
+                            Location = new System.Drawing.Point(187, 104),
+                            FlatStyle = FlatStyle.Flat,
+                        };
+                        btnConcluido.FlatStyle = FlatStyle.Flat;
+                        btnConcluido.FlatAppearance.BorderSize = 0;
+                        btnConcluido.Image = bmpAceitar;
+
+                        btnConcluido.Click += new EventHandler(btnConcluido_Click);
+                        btnConcluido.Tag = id;
+
+                        RoundedButton btnVoltarNovo = new RoundedButton()
+                        {
+                            BackColor = Color.Gold,
+                            Size = new Size(51, 27),
+                            Location = new System.Drawing.Point(130, 104),
+                            FlatStyle = FlatStyle.Flat,
+                        };
+                        btnVoltarNovo.FlatStyle = FlatStyle.Flat;
+                        btnVoltarNovo.FlatAppearance.BorderSize = 0;
+                        btnVoltarNovo.Image = bmpVoltar;
+
+                        btnVoltarNovo.Click += new EventHandler(btnVoltarNovo_Click);
+                        btnVoltarNovo.Tag = id;
+
+                        pedidoPanel.Controls.Add(btnConcluido);
+                        pedidoPanel.Controls.Add(btnDeletar);
+                        pedidoPanel.Controls.Add(btnInfo);
+                        pedidoPanel.Controls.Add(btnVoltarNovo);
+
+                        if (data > p.deadline)
+                        {
+                            lblpedidoDeadline.ForeColor = Color.Red;
+
+                            flpanelPedidosAtrasados.Controls.Add(pedidoPanel);
+                        
+                            flpanelPedidosAtrasados.Visible = true;
+                        }
+                        else
+                        {
+                            flpanelPedidosAndamento.Controls.Add(pedidoPanel);
+                        }
+
+                        break;
+                    case 2:
+                        RoundedButton btnVoltarAndamento = new RoundedButton()
+                        {
+                            BackColor = Color.Gold,
+                            Size = new Size(51, 27),
+                            Location = new System.Drawing.Point(244, 104),
+                            FlatStyle = FlatStyle.Flat,
+                        };
+                        btnVoltarAndamento.FlatStyle = FlatStyle.Flat;
+                        btnVoltarAndamento.FlatAppearance.BorderSize = 0;
+                        btnVoltarAndamento.Image = bmpVoltar;
+
+                        btnVoltarAndamento.Click += new EventHandler(btnVoltarAndamento_Click);
+                        btnVoltarAndamento.Tag = id;
+
+                        RoundedButton btnArquivar = new RoundedButton()
+                        {
+                            BackColor = Color.LightGray,
+                            Size = new Size(51, 27),
+                            Location = new System.Drawing.Point(187, 104),
+                            FlatStyle = FlatStyle.Flat,
+                        };
+                        btnArquivar.FlatStyle = FlatStyle.Flat;
+                        btnArquivar.FlatAppearance.BorderSize = 0;
+
+                        var bmpArquivar = new Bitmap(APP.Properties.Resources.archive_32dp_FFFFFF_FILL0_wght400_GRAD0_opsz40);
+                        btnArquivar.Image = bmpArquivar;
+
+                        btnArquivar.Click += new EventHandler(btnArquivar_Click);
+                        btnArquivar.Tag = id;
+
+                        pedidoPanel.Controls.Add(btnArquivar);
+                        pedidoPanel.Controls.Add(btnVoltarAndamento);
+                        pedidoPanel.Controls.Add(btnDeletar);
+
+                        flpanelPedidosConcluidos.Controls.Add(pedidoPanel);
+
+                        break;
+                    default: break;
                 }
-
-                this.ResumeLayout();
             }
         }
 
@@ -664,6 +694,53 @@ namespace APP
             }
         }
 
+        private void btnArquivar_Click(object sender, EventArgs e)
+        {
+            if (sender is not System.Windows.Forms.Button botao || botao.Tag == null)
+                return;
+
+            int id = (int)botao.Tag;
+
+            DialogResult resposta = MessageBox.Show("Deseja Arquivar pedido?",
+                                                    "Confirmar",
+                                                    MessageBoxButtons.YesNo,
+                                                    MessageBoxIcon.Information);
+
+            if (resposta == DialogResult.Yes)
+            {
+                using (MySqlConnection conexao = new MySqlConnection(data_source))
+                {
+                    try
+                    {
+                        conexao.Open();
+
+                        string sql = $"UPDATE formulario " +
+                                     $"SET formulario.status = 4 " +
+                                     $"WHERE formulario.id_comissao = @id";
+
+                        MySqlCommand cmd = new MySqlCommand(sql, conexao);
+                        cmd.Parameters.AddWithValue("id", id);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (MySqlException ex)
+                    {
+                        //Trata erros relacionados ao MySQL
+                        MessageBox.Show("Erro " + ex.Number + " Ocorreu: " + ex.Message,
+                                        "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    catch (Exception ex)
+                    {
+                        //Trata outros tipos de erro
+                        MessageBox.Show("Ocorreu: " + ex.Message,
+                                        "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    recarregarPedidos();
+                }
+            }
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             frmFormulario f2 = new frmFormulario(this); // 'this' é a referência do Form1
@@ -685,6 +762,8 @@ namespace APP
             if (e.KeyCode == Keys.Enter)
             {
                 await filtrarPedidos();
+                e.SuppressKeyPress = true;
+                e.Handled = true;
             }
         }
 
@@ -698,6 +777,15 @@ namespace APP
         {
             lblHora.Text = DateTime.Now.ToString("HH:mm");
             lblData.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+            this.KeyPreview = true;
+            this.AcceptButton = null;
+        }
+
+        private void btnArquivado_Click(object sender, EventArgs e)
+        {
+            frmArquivados f3 = new frmArquivados(this);
+            f3.Show();
         }
     }
 }

@@ -36,8 +36,8 @@ namespace APP
                 try
                 {
                     conexao.Open();
-                    
-                    string sql = $"SELECT formulario.contato, formulario.descricao, cliente.nome_cliente, formulario.tipo_modelo, formulario.deadline, formulario.modelo_jogo " +
+
+                    string sql = $"SELECT formulario.contato, formulario.descricao, cliente.nome_cliente, formulario.tipo_modelo, formulario.deadline, formulario.modelo_jogo, formulario.id_comissao " +
                                  $"FROM formulario " +
                                  $"INNER JOIN cliente ON formulario.id_comissao = cliente.id_cliente " +
                                  $"WHERE formulario.id_comissao = @id";
@@ -45,7 +45,7 @@ namespace APP
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
 
                     comando.Parameters.AddWithValue("id", id);
-                   
+
                     MySqlDataReader reader = comando.ExecuteReader();
 
                     while (reader.Read())
@@ -83,6 +83,9 @@ namespace APP
                         {
                             cbModeloJogo.Text = "Não";
                         }
+
+                        lblIDn.Text = Convert.ToString(reader.GetInt16(6));
+
                     }
                 }
                 catch (MySqlException ex)
@@ -102,7 +105,7 @@ namespace APP
         private void AtualizarPedido()
         {
             using (MySqlConnection conexao = new MySqlConnection(data_source))
-            {               
+            {
                 try
                 {
                     conexao.Open();

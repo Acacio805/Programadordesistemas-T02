@@ -46,6 +46,8 @@
             roundedPanel2 = new RPanel.RoundedPanel();
             roundedPanel1 = new RPanel.RoundedPanel();
             roundedPanel3 = new RPanel.RoundedPanel();
+            lblID = new Label();
+            lblIDn = new Label();
             panelTop.SuspendLayout();
             roundedPanel2.SuspendLayout();
             roundedPanel1.SuspendLayout();
@@ -250,11 +252,33 @@
             roundedPanel3.Size = new Size(773, 44);
             roundedPanel3.TabIndex = 32;
             // 
+            // lblID
+            // 
+            lblID.AutoSize = true;
+            lblID.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblID.Location = new Point(19, 576);
+            lblID.Name = "lblID";
+            lblID.Size = new Size(49, 32);
+            lblID.TabIndex = 33;
+            lblID.Text = "ID :";
+            // 
+            // lblIDn
+            // 
+            lblIDn.AutoSize = true;
+            lblIDn.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblIDn.Location = new Point(74, 576);
+            lblIDn.Name = "lblIDn";
+            lblIDn.Size = new Size(37, 32);
+            lblIDn.TabIndex = 34;
+            lblIDn.Text = "ID";
+            // 
             // frmInfo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(989, 617);
+            Controls.Add(lblIDn);
+            Controls.Add(lblID);
             Controls.Add(roundedPanel3);
             Controls.Add(roundedPanel1);
             Controls.Add(roundedPanel2);
@@ -303,5 +327,7 @@
         private RPanel.RoundedPanel roundedPanel2;
         private RPanel.RoundedPanel roundedPanel1;
         private RPanel.RoundedPanel roundedPanel3;
+        private Label lblID;
+        private Label lblIDn;
     }
 }

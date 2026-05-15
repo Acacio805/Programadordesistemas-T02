@@ -9,6 +9,18 @@ namespace Rflp
     {
         public int BorderRadius { get; set; } = 20;
 
+        public RoundedFlowLayoutPanel()
+        {
+            // Enables double buffering
+            this.DoubleBuffered = true;
+
+            // Optional: Additional styles for smoother rendering
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint |
+                          ControlStyles.UserPaint |
+                          ControlStyles.OptimizedDoubleBuffer, true);
+            this.UpdateStyles();
+        }
+
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
